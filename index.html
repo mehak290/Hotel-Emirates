@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Hotel Emirates</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    Hotel Emirates
+    <header class="topbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-icon">E</span>
+          <div class="logo-text">
+            <h2>EMIRATES</h2>
+            <p>A Stay Beyond Expectations.</p>
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Room</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Login/Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <section class="head" id="home">
+      <h1 class="head-title">EMIRATES</h1><br>
+    </section>
+    <section class="booking-form">
+      <form>
+        <div class="form-group">
+          <label for="arrival">Arrival Date</label>
+          <input type="date" id="arrival" placeholder="DD-MM-YYYY">
+        </div>
+        <div class="form-group">
+          <label for="departure">Departure Date</label>
+          <input type="date" id="departure" placeholder="DD-MM-YYYY">
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <input type="text" id="guests" placeholder="No. Of Guests">
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile No.</label>
+          <input type="tel" id="mobile" placeholder="Mobile No.">
+        </div>
+      </form>
+    </section>
+    
   </body>
 </html>
