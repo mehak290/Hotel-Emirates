@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
   
   /* Topbar Header */
 .topbar {
@@ -65,7 +69,9 @@
   
   /* Head Section */
 .head {
-    background-color: #8e8e8e;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
     display: flex;
     align-items: center;
