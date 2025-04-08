@@ -83,6 +83,37 @@ body {
     color: #4b253b;
     font-weight: bold;
 }
+/* New Container */
+.new-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #ffffff; /* Or whatever bg you need */
+}
+  
+.new-container-section {
+    text-align: center;
+    max-width: 1100px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+  
+.new-container-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #0d0d23;
+}
+  
+.new-container-section p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #5a6e85;
+}
+  
   
   /* Booking Section */
 .booking-form {
