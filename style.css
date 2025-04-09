@@ -181,9 +181,9 @@ body {
     width: 90%;
     max-width: 1000px;
     padding: 20px;
-    background: #969ead;
+    background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgb(119, 99, 99);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
   
@@ -257,62 +257,4 @@ body {
 .slides img:hover {
     transform: scale(1.05); 
 }
-/* DPECIAL DISH */
-/* #special-dish {
-    padding: 40px;
-    text-align: center;
-}
   
-  #special {
-    display: inline-block;
-    padding: 20px 40px;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #002366;
-    border: 2px solid white;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-  }
-  
-  #special:hover {
-    background-color: white;
-    color: #002366;
-    border-color: #002366;
-  }
-   */
-
-.menu__items {
-    width: 50%;
-    max-width: 1100px;
-    padding: 20px;
-    background: #969ead;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgb(119, 99, 99);
-    text-align: center;
-}
-  
-.menu__items li {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    cursor: pointer;
-    transition: 0.9s;
-    background-color: #969ead;
-    color: #000000;
-}
-  
-.menu__items li:hover {
-    background-color: #2e3644;
-    color: #ffffff;
-}
-  
-  
-.menu__items img {
-    width:120px;
-    height: 120px;
-    border-radius: 2px;
-    align-content: center;
-}
