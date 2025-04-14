@@ -189,3 +189,16 @@ document.getElementById('verifyOtpButton').addEventListener('click', function ()
       verifyMessage.style.color = "red";
   }
 });
+
+// script.js
+function submitForm() {
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  if (username && email && password) {
+      alert(`Account Created Successfully!\nUsername: ${username}\nEmail: ${email}`);
+  } else {
+      alert('Please fill in all fields!');
+  }
+}
