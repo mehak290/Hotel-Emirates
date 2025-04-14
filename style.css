@@ -225,3 +225,51 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.form-container {
+  max-width: 300px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+.remember-container {
+  display: flex;
+  align-items: middle;
+}
+
+.remember-container input {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.remember-container input {
+  margin-right: 10px;
+  vertical-align:middle; /* Aligns the checkbox with the text */
+}
+
+.remember-container label {
+  vertical-align: middle; /* Ensures label aligns with the checkbox */
+}

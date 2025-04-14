@@ -202,3 +202,29 @@ function submitForm() {
       alert('Please fill in all fields!');
   }
 }
+const loginForm = document.getElementById('loginForm');
+    const usernameInput = document.getElementById('username');
+    const rememberMeCheckbox = document.getElementById('rememberMe');
+
+    // Save the username and remember me checkbox state in localStorage
+    loginForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (rememberMeCheckbox.checked) {
+        localStorage.setItem('rememberMe', 'true');
+        localStorage.setItem('username', usernameInput.value);
+      } else {
+        localStorage.removeItem('rememberMe');
+        localStorage.removeItem('username');
+      }
+      alert('Login successful!');
+    });
+
+    // Load the saved username and checkbox state on page load
+    window.addEventListener('load', () => {
+      const remembered = localStorage.getItem('rememberMe') === 'true';
+      const savedUsername = localStorage.getItem('username');
+      rememberMeCheckbox.checked = remembered;
+      if (remembered && savedUsername) {
+        usernameInput.value = savedUsername;
+      }
+    });
