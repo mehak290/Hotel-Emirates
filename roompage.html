@@ -1,155 +1,274 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Rooms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f8f8f8;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px 20px;
+      background: #f1f3f6;
+      color: #333;
     }
-    h2 {
-      font-size: 2rem;
-    }
-    .swiper {
+
+    .heading-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading-container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  position: relative;
+}
+
+.heading-container .underline {
+  width: 80px;
+  height: 4px;
+  background-color: #219653;
+  margin: 10px auto 20px;
+  border-radius: 3px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.heading-container p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+.swiper {
       width: 100%;
       padding-top: 20px;
     }
+
     .swiper-slide {
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       padding: 15px;
       text-align: center;
-      width: 300px !important;
+      width: 320px !important;
+      transition: transform 0.3s ease;
     }
+
+    .swiper-slide:hover {
+      transform: translateY(-5px);
+    }
+
     .swiper-slide img {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 12px;
     }
+
     .room-title {
-      font-weight: bold;
-      font-size: 18px;
-      margin: 10px 0 5px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #222;
+      margin: 12px 0 5px;
     }
+
     .stars {
-      color: orange;
+      color: #f4b400;
+      font-size: 18px;
     }
+
     .desc {
       font-size: 14px;
-      color: #555;
+      color: #666;
       margin: 10px 0;
+      min-height: 50px;
     }
+
     .price {
-      color: green;
-      font-weight: bold;
+      color: #219653;
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 5px;
     }
+
     .book-now {
-      background: green;
+      background: #219653;
       color: white;
       border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 10px 22px;
+      border-radius: 6px;
       cursor: pointer;
-      margin-top: 10px;
+      margin-top: 15px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .book-now:hover {
+      background: #1e874a;
+    }
+
+    .date-input {
+      width: 90%;
+      padding: 9px;
+      margin: 6px auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #fafafa;
+    }
+
+    .success-msg {
+      color: #2e7d32;
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #219653;
+    }
+
+    @media (max-width: 768px) {
+      .swiper-slide {
+        width: 90% !important;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h2>Our Rooms</h2>
-  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+  <div class="heading-container">
+    <h2>Explore Our Rooms</h2>
+    <div class="underline"></div>
+    <p>Discover comfort and luxury with our finest rooms tailored for your perfect stay.</p>
+  </div>
 
   <!-- Slider main container -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <!-- Room 1 -->
+
+      <!-- 🛏 Rooms (All updated with bookRoom(this)) -->
+      <!-- Repeat for each room -->
       <div class="swiper-slide">
-        <img src="https://fthmb.tqn.com/xZ3rHdeVZmOcm_9IfnG4tFcW6d4=/970x546/filters:fill(auto,1)/7-Star-Hotels-Rooms-1-579b649f3df78c3276267822.jpg" alt="Room 1" />
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill" alt="Room 1" />
         <div class="room-title">Deluxe Room</div>
         <div class="stars">★★★★★</div>
         <div class="desc">Spacious deluxe room with a king bed and balcony view.</div>
         <div class="price">$220 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 2 -->
       <div class="swiper-slide">
-        <img src="http://livinator.com/wp-content/uploads/2015/09/niahome.jpg" alt="Room 2" />
+        <img src="https://thecentrum.in/wp-content/uploads/2024/03/Premium-Room-Main-Img.webp" alt="Room 2" />
         <div class="room-title">Premium Suite</div>
         <div class="stars">★★★★★</div>
         <div class="desc">Modern suite with living area and luxury bathroom.</div>
         <div class="price">$300 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 3 -->
       <div class="swiper-slide">
-        <img src="https://wallpapercave.com/wp/wp3598849.jpg" alt="Room 3" />
+        <img src="https://manorhousecountryhotel.s3-assets.com/executive-family-room-main.png" alt="Room 3" />
         <div class="room-title">Family Room</div>
         <div class="stars">★★★★★</div>
         <div class="desc">Ideal for families, with extra beds and space.</div>
         <div class="price">$270 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 4 -->
       <div class="swiper-slide">
-        <img src="https://3.bp.blogspot.com/-XRqrxCIS4hM/Vtrp_vr8RFI/AAAAAAAAAn8/wSduTOWNzWc/s1600/ba.jpg" alt="Room 4" />
+        <img src="https://i.insider.com/5eeb92f23f737015fe4b778a?width=700" alt="Room 4" />
         <div class="room-title">Business Room</div>
         <div class="stars">★★★★★</div>
         <div class="desc">Comfortable for business trips with work desk.</div>
         <div class="price">$200 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 5 -->
       <div class="swiper-slide">
-        <img src="https://cardiogenix.com/wp-content/uploads/2016/04/tropical-luxury-hotel-bedroom-with-tropical-luxury-hotel-bedroom-the-epitome-of-luxury.jpg" alt="Room 5" />
+        <img src="https://www.apexhotels.co.uk/media/pqdfy0bc/acb-rm-superior-double-bedroom-dsc03564.jpg?rmode=crop&width=768&height=511" alt="Room 5" />
         <div class="room-title">Superior Room</div>
         <div class="stars">★★★★★</div>
         <div class="desc">Bright and airy with modern interiors and views.</div>
         <div class="price">$250 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 6 -->
       <div class="swiper-slide">
-        <img src="http://www.bestwesternplusmeridian.com/Content/images/Queen-Room.jpg" alt="Room 6" />
+        <img src="https://www.sripanwa.com/images/villas/two-bedroom-pool-villa-ocean-sunset-view-phuket-sri-panwa-luxury-resort.jpg" alt="Room 6" />
         <div class="room-title">Ocean View</div>
         <div class="stars">★★★★★</div>
         <div class="desc">Wake up to stunning views of the ocean and beach.</div>
         <div class="price">$310 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 7 -->
       <div class="swiper-slide">
-        <img src="https://www.homestratosphere.com/wp-content/uploads/2014/05/shutterstock_30411274.jpg" alt="Room 7" />
+        <img src="https://www.thesavoycollection.com/wp-content/uploads/2021/07/george-single-room.jpg" alt="Room 7" />
         <div class="room-title">Cozy Double</div>
         <div class="stars">★★★★☆</div>
         <div class="desc">Cozy and perfect for couples or solo travelers.</div>
         <div class="price">$180 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
-      <!-- Room 8 -->
       <div class="swiper-slide">
-        <img src="https://cache.marriott.com/marriottassets/marriott/DXBGL/dxbgl-royal-5610-hor-clsc.jpg" alt="Room 8" />
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/582960977.jpg?k=06a25f90b6489cad43a6c7dce781a9427c7ac621fae23ff0f490001ac3ee24c3&o=&hp=1" alt="Room 8" />
         <div class="room-title">Rustic Retreat</div>
         <div class="stars">★★★★☆</div>
         <div class="desc">A charming retreat with rustic decor and vibe.</div>
         <div class="price">$230 Per Night</div>
-        <button class="book-now">BOOK NOW</button>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
+
     </div>
-    
-    <!-- Navigation buttons -->
+
     <div class="swiper-button-next" style="color: green;"></div>
     <div class="swiper-button-prev" style="color: green;"></div>
   </div>
@@ -164,6 +283,8 @@
         prevEl: ".swiper-button-prev"
       },
       breakpoints: {
+        1024: {
+          slidesPerView: 3},
         768: {
           slidesPerView: 2
         },
@@ -172,6 +293,28 @@
         }
       }
     });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".success-msg").forEach(msg => {
+        msg.style.display = "none";
+      });
+    });
+
+    function bookRoom(btn) {
+      const slide = btn.closest(".swiper-slide");
+      const dates = slide.querySelectorAll(".date-input");
+      const checkIn = dates[0].value;
+      const checkOut = dates[1].value;
+      const msg = slide.querySelector(".success-msg");
+
+      if (!checkIn || !checkOut) {
+        alert("Please select both check-in and check-out dates.");
+        return;
+      }
+
+      msg.textContent = `✅ Booked from ${checkIn} to ${checkOut}`;
+      msg.style.display = "block";
+    }
   </script>
 </body>
 </html>
