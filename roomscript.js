@@ -35,6 +35,6 @@ var swiper = new Swiper(".mySwiper", {
       return;
     }
 
-    msg.textContent = `✅ Booked from ${checkIn} to ${checkOut}`;
+    msg.textContent = "✅Room Booked Successfully!";
     msg.style.display = "block";
   }
