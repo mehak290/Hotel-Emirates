@@ -32,4 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
     window.addEventListener('resize', () => showSlide(currentIndex));
   });
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("revealBranches").addEventListener("click", () => {
+      document.querySelector(".branch.left").classList.remove("hidden");
+      document.querySelector(".branch.right").classList.remove("hidden");
+      document.querySelector(".branch.left").classList.add("show");
+      document.querySelector(".branch.right").classList.add("show");
+    });
+  });
+  
   
