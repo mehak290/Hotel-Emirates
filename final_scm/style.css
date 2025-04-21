@@ -30,7 +30,7 @@
   }
   
   /* === Navbar === */
-   {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@
   
   /* === Hero Text === */
   .hero-text {
-    text-align: center;
+    : center;
     margin: auto;
   }
   
