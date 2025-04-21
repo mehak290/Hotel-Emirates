@@ -273,3 +273,23 @@ button:hover {
 .remember-container label {
   vertical-align: middle; /* Ensures label aligns with the checkbox */
 }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.rating {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.star {
+  color: gray;
+  transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+  color: gold;
+}
