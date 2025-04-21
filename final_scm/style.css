@@ -11,7 +11,7 @@
   
   /* === Hero Section === */
   .hero-section {
-    background-image: url(""); 
+    background-image: url("https://i.pinimg.com/736x/f6/bf/2e/f6bf2ead8546606c5da8094f461b7299.jpg"); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -30,7 +30,7 @@
   }
   
   /* === Navbar === */
-  .navbar {
+   {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,32 +83,7 @@
     border-radius: 5px;
     text-decoration: none;
   }
-  
-  /* === About Content === */
-  .about-content {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px;
-    background-color: rgba(217, 203, 174, 0.628);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-content h2 {
-    color: #005f73;
-    margin-bottom: 20px;
-  }
-  
-  .about-content h3 {
-    color: #0a9396;
-    margin-top: 20px;
-  }
-  
-  .about-content ul {
-    list-style-type: square;
-    padding-left: 20px;
-  }
-  
+
   /* === Footer === */
   footer {
     text-align: center;
