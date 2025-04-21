@@ -267,10 +267,21 @@ function validateOTP(userInputOTP) {
 console.log(validateOTP("123456")); // Returns true or false
 
 
-Next Steps:
-- Send OTP: Use an API like Twilio for SMS or Nodemailer for emails.
-- Expiration: Set a timer to expire the OTP after a few minutes.
+const stars = document.querySelectorAll(".star");
+const ratingValue = document.getElementById("ratingValue");
 
-Would you like help integrating it with an email or SMS service? 🚀
+stars.forEach(star => {
+    star.addEventListener("click", function() {
+        let value = this.getAttribute("data-value");
+        
+        // Remove active class from all stars
+        stars.forEach(s => s.classList.remove("active"));
 
+        // Add active class to selected stars
+        for (let i = 0; i < value; i++) {
+            stars[i].classList.add("active");
+        }
 
+        ratingValue.textContent = `Rating: ${value}`;
+    });
+});
