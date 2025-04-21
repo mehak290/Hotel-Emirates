@@ -1,6 +1,14 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
+<<<<<<< HEAD
     spaceBetween: 30,
+=======
+    spaceBetween: 20,
+    loop: false,
+    centeredSlides: false,
+    slidesOffsetAfter: 0,
+    watchOverflow: true,
+>>>>>>> Geetika
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
@@ -8,10 +16,17 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
       1024: {
         slidesPerView: 3},
+<<<<<<< HEAD
       768: {
         slidesPerView: 2
       },
       480: {
+=======
+      640: {
+        slidesPerView: 2
+      },
+      320: {
+>>>>>>> Geetika
         slidesPerView: 1
       }
     }
