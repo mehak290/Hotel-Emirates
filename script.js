@@ -1,40 +1,3 @@
-<<<<<<< HEAD
-
-document.addEventListener('DOMContentLoaded', function () {
-    const sendBtn = document.querySelector('.send-btn');
-    sendBtn.addEventListener('click', function () {
-      alert('Your response has been sent successfully! We will contact you shortly.');
-      console.log('Send Response button clicked!');
-    });
-  });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelector('.slides');
-    const images = document.querySelectorAll('.slides img');
-    const prevBtn = document.querySelector('.nav.left');
-    const nextBtn = document.querySelector('.nav.right');
-  
-    let currentIndex = 0;
-  
-    function showSlide(index) {
-      const slideWidth = images[0].clientWidth;
-      slides.style.transform = `translateX(-${index * slideWidth}px)`;
-    }
-  
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showSlide(currentIndex);
-    });
-  
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      showSlide(currentIndex);
-    });
-  
-    window.addEventListener('resize', () => showSlide(currentIndex));
-  });
-  
-=======
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
   
@@ -267,14 +230,9 @@ const loginForm = document.getElementById('loginForm');
     });
 
     //otp
-    Creating an OTP (One-Time Password) generation system in JavaScript is pretty straightforward. Here's a simple way to implement it:
-Steps to generate an OTP:
-- Generate a random number.
-- Ensure it's a fixed length (e.g., 6 digits).
-- Send it to the user via email or SMS.
-- Validate the OTP entered by the user.
+   
 
-Example Code:
+
 // Function to generate a random OTP
 function generateOTP(length = 6) {
     let otp = '';
@@ -289,8 +247,6 @@ const otp = generateOTP();
 console.log("Generated OTP:", otp);
 
 
-Validating OTP:
-To validate the OTP, store it temporarily (e.g., in session storage) and check if the user-entered OTP matches it.
 // Storing OTP
 sessionStorage.setItem("otp", otp);
 
@@ -322,4 +278,3 @@ stars.forEach(star => {
         ratingValue.textContent = `Rating: ${value}`;
     });
 });
->>>>>>> mehak

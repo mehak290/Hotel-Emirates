@@ -70,7 +70,7 @@ body {
   
   /* Head Section */
 .head {
-    background-image:url(bg5.jpeg);
+    background-image:url(finalbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -81,7 +81,7 @@ body {
   
 .head-title {
     font-size: 72px;
-    color: #4b253b;
+    color: #ffffff;
     font-weight: bold;
 }
 /* New Container */
@@ -273,9 +273,9 @@ body {
     box-shadow: 0 8px 25px rgba(34, 30, 95, 0.668);
     text-align: center;
     
-  }
+}
   
-  .special-dish {
+.special-dish {
     background-color: white;
     color: royalblue;
     border: 2px solid white;
@@ -285,40 +285,40 @@ body {
     border-radius: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(50, 28, 91, 0.57);
-  }
+}
   
-  .special-dish img {
+.special-dish img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 10px;
-  }
+}
   
-  .special-dish h2 {
+.special-dish h2 {
     font-size: 18px;
     margin: 10px 0 5px;
-  }
+}
   
-  .special-dish p {
+.special-dish p {
     font-size: 14px;
-  }
+}
   
-  .special-dish:hover {
+.special-dish:hover {
     background-color: royalblue;
     color: white;
     border: 2px solid white;
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
     cursor: pointer;
-    
-  }
+}
   
-  .special-dish:hover img {
+.special-dish:hover img {
     filter: brightness(0.9) saturate(1.2);
-  }
+}
 .special-dish p:hover{
     color: #ffffff;
 }
+<<<<<<< HEAD
   
 =======
 body {
@@ -617,3 +617,166 @@ body {
   color: gold;
 }
 >>>>>>> mehak
+=======
+/* Whole section background */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a2540; /* deep blue */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 119, 255, 0.4);
+    color: white;
+    gap: 40px;
+  }
+  
+  /* Left content styling */
+  .left-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .left-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .left-container button {
+    background-color: #ffaa00;
+    color: #5e0e0e;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Right video section with glow */
+  .right-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 179, 255, 0.7);
+  }
+  
+  .right-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+body {
+    margin: 0;
+    background: linear-gradient(to top right, #ffffff, #fcf2f2);
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+  
+.branches {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background: rgba(19, 2, 62, 0.695);
+    border: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgb(123, 115, 144);
+    transition: all 0.4s ease;
+}
+  
+button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+}
+  
+.branch {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+  
+.branch.left {
+    left: 2%;
+    flex-direction: row-reverse;
+}
+  
+.branch.right {
+    right: 2%;
+}
+  
+.arc {
+    width: 50px;
+    height: 50px;
+    border: 3px dashed #000000;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+  
+.arc-left {
+    transform: rotate(135deg);
+}
+  
+.arc-right {
+    transform: rotate(-135deg);
+}
+  
+@keyframes glow {
+    from {
+      box-shadow: 0 0 5px #763636;
+    }
+    to {
+      box-shadow: 0 0 20px #612f54;
+    }
+}
+  
+.info {
+    margin: 55px;
+    background: rgba(123, 130, 255, 0.867);
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgb(59, 148, 196);
+}
+  
+.info h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+  
+.hidden {
+    pointer-events: none;
+}
+  
+.show {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    pointer-events: all;
+}
+  
+>>>>>>> 0e2ae6fabdc0d77dc5d7db48343ecd30276d4bda
