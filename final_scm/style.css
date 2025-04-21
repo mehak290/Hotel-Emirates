@@ -62,7 +62,7 @@
   
   /* === Hero Text === */
   .hero-text {
-    : center;
+    text-align: center;
     margin: auto;
   }
   
@@ -85,7 +85,7 @@
   }
 
   /* === Footer === */
-  footer {
+   {
     text-align: center;
     padding: 20px;
     background-color: #003049;
