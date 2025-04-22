@@ -6,6 +6,8 @@
 - Choose the number of guests per booking.
 - Make secure online payments.
 - Save their details by using login options like gmail or phone numbers.
+- See the rooms online.
+- Rate the best rooms and Hospitality.
 - Select from a variety of delicious food options.
 
 This project ensures a seamless experience for users looking for a reliable and efficient way to manage hotel reservations and enjoy premium hospitality services.
@@ -24,4 +26,4 @@ This project ensures a seamless experience for users looking for a reliable and 
 ## Installation
 ### Prerequisites:
 - Html editor
-- Javascript nd other libraries
+- Javascript and other libraries
