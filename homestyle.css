@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+  
+  /* Topbar Header */
+.topbar {
+    background-color: #0b1b34;
+    padding: 20px 0;* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+      
+      /* Topbar Header */
+    .topbar {
+        background-color: #0b1b34;
+        padding: 20px 0;
+        color: white
+    }
+}
+    .nav-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+      
+    .logo-icon {
+        font-size: 32px;
+        font-weight: bold;
+        background-color: white;
+        color: #0b1b34;
+        padding: 10px;
+        border-radius: 5px;
+    }
+      
+    .logo-text h2 {
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+      
+    .logo-text p {
+        font-size: 14px;
+        color: #a3b1c6;
+    }
+      
+    .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+      
+    .nav-links li a {
+        color: #a3b1c6;
+        text-decoration: none;
+        font-weight: 500;
+    }
+      
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+      
+      /* Head Section */
+    .head {
+        background-image:url(download.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .head-title {
+        font-size: 72px;
+        color: #4b253b;
+        font-weight: bold;
+    }
+    /* New Container */
+    .new-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        background-color: #ffffff; 
+    }
+      
+    .new-container-section {
+        text-align: center;
+        max-width: 1100px;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+    }
+      
+    .new-container-section h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #0d0d23;
+    }
+      
+    .new-container-section p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8;
+        color: #5a6e85;
+    }
+      
+      
+      /* Booking Section */
+    .booking-form {
+        background-color: #0b1b34;
+        color: white;
+        padding: 40px 10%;
+        display: flex;
+        justify-content: center;
+    }
+      
+    .booking-form form {
+        display: flex;
+        width: 100%;
+        max-width: 1100px;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+      
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 200px;
+        min-width: 200px;
+    }
+      
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+      
+    .form-group input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #1f2d45;
+        color: white;
+    }
+      
+    .form-group input::placeholder {
+        color: #a3b1c6;
+    }
+    
+    .send-btn {
+        background-color: #007bff;
+        color: #ffffff; 
+        padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }
+      
+    .send-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.03);
+    }
+
+    /* about us */
+    .intro {
+        background-color: rgb(25, 34, 59);
+        color: white;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+      
+      .intro_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        gap: 30px;
+      }
+      
+      /* Text block - 75% */
+      .intro__cotent {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 10px;
+      }
+      
+      .section__subheader {
+        font-size: 60px;
+        font-weight: 500;
+        color: #ffd700;
+      }
+      
+      .section__header {
+        font-size: 28px;
+        font-family: 'Playfair Display', serif;
+      }
+      
+      .section__description {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      
+      .btn {
+        padding: 8px 16px;
+        background-color: white;
+        color: royalblue;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        align-self: flex-start;
+      }
+      .btn:hover {
+        background-color: #f0f0f0;
+      }
+      
+      /* Video block - 25% */
+      .intro__video {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .intro__video video {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(86, 142, 190, 0.811);
+      }
+      
+      @media (max-width: 768px) {
+        .intro {
+          height: auto;
+          padding: 30px 0;
+        }
+      
+        .intro_container {
+          flex-direction: column;
+          gap: 20px;
+          height: auto;
+        }
+      
+        .intro__cotent,
+        .intro__video {
+          width: 100%;
+          flex: none;
+        }
+      
+        .intro__video video {
+          height: 200px;
+        }
+      }
+      

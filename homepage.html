@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="branch.css">
     <title>Hotel Emirates</title>
-    <script src="script.js"></script>
+    <script src="homescript.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
@@ -33,4 +34,58 @@
         </nav>
       </div>
     </header>
+  <!-- HOME -->
+  <section class="head" id="home">
+    <img src="logo.jpeg" length="70px" width="70px"><br>
+    <h1 class="head-title">EMIRATES</h1><hr>
+    </section>
+
+    <!-- BOOKING SECTION -->
+
+  <section class="booking-form">
+    <form>
+      <div class="form-group">
+        <label for="arrival">Arrival Date</label>
+        <input type="date" id="arrival" min="2025-04-22" placeholder="DD-MM-YYYY" required>
+      </div>
+      <div class="form-group">
+        <label for="departure">Departure Date</label>
+        <input type="date" id="departure" min="2025-04-22" placeholder="DD-MM-YYYY" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Guests</label>
+        <input type="text" id="guests" placeholder="No. Of Guests" required>
+      </div>
+      <!-- BUTTON -->
+      <button class="send-btn">Check Availability</button>
+    </form>
+  </section>
+      <!-- TEXTAREA -->
+      <div class="new-container">
+        <section class="new-container-section">
+          <h1>Your Best Holidays Start Here</h1>
+          <p>
+            Welcome to a hidden realm of extraordinary accommodations with luxury, comfort, and adventure converge.
+            Our hotels offer an unparalleled escape from the ordinary, inviting you to explore a subterranean world of wonders.<br>
+            Here you'll find everything you need to know as a tourist.<br> <br> <hr>
+          </p>
+        </section></div>
+  <!--ABOUT US  -->
+  <section class="intro">
+    <div class="section_container intro_container">
+      <div class="intro__cotent">
+        <p class="section__subheader">HIGHLIGHTS</p>
+        <h2 class="section__header">abce</h2>
+        <p class="section__description">
+          content to write.
+        </p>
+        <button class="btn">About Us</button>
+      </div>
+      <div class="intro__video">
+        <video src="video.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
 
