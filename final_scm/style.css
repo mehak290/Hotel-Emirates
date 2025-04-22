@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  /* === Hero Section === */
+  .hero-section {
+    background-image: url("https://i.pinimg.com/736x/f6/bf/2e/f6bf2ead8546606c5da8094f461b7299.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  
+  /* === Navbar === */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .navbar .btn {
+    background-color: #f4a261;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+  /* === Hero Text === */
+  .hero-text {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text .btn {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  /* === Footer === */
+   {
+    text-align: center;
+    padding: 20px;
+    background-color: #003049;
+    color: white;
+    margin-top: 40px;
+  }
+  
