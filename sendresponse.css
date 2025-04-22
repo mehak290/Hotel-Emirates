@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: #121212; /* Dark background fallback */
+    background: linear-gradient(
+        135deg,
+        #121212 25%,
+        #1a1a1a 25%,
+        #1a1a1a 50%,
+        #121212 50%,
+        #121212 75%,
+        #1a1a1a 75%,
+        #1a1a1a
+    );
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    overflow-y: auto;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+h1 {
+    color: #e0f7fa;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #080808;
+    border-radius: 2px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+form:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+form:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 5px;
+    font-size: 15px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"] {
+    font-family: "SF Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: 5.5px 7px 0 black;
+}
+
+button {
+    background-color: #006064;
+    color: #ffffff;
+    border: 1.5px solid #000;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 2.5px 3px 0 #000;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+button:focus {
+    box-shadow: 5.5px 7px 0 black;
+    outline: none;
+}
+
+button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 1px 1.5px 0 #000;
+}
+
+/* Custom checkbox styling to match the input style */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: "SF Pro", "Segoe UI", sans-serif;
+    user-select: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    margin-right: 10px;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #f5f5f5;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container input:focus ~ .checkmark {
+    box-shadow: 5.5px 7px 0 black;
+}
+
+.checkbox-container .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Animation for clicking */
+.checkbox-container input:active ~ .checkmark {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 1px 1.5px 0 #000;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px 15px;
+    }
+    
+    form {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    input, button {
+        padding: 10px 12px;
+    }
+    
+    .checkmark {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .checkbox-container .checkmark:after {
+        left: 7px;
+        top: 3px;
+        width: 4px;
+        height: 9px;
+    }
+}
