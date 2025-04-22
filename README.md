@@ -1,5 +1,4 @@
 # Emirates - Online Hotel Booking Website
-
 ## Overview
 **Emirates** is an intuitive and user-friendly online hotel booking platform that allows guests to:
 - Book rooms for the specified number of days they need.
