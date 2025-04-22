@@ -1,17 +1,38 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    min-height: 100vh;
+    background: #121212; /* Dark background fallback */
+    background: linear-gradient(
+        135deg,
+        #121212 25%,
+        #1a1a1a 25%,
+        #1a1a1a 50%,
+        #121212 50%,
+        #121212 75%,
+        #1a1a1a 75%,
+        #1a1a1a
+    );
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #a7ffeb, #e0f7fa); 
     padding: 40px 0;
     overflow-y: auto;
 }
 
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
 h1 {
-    color: #004d40;
+    color: #e0f7fa;
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
@@ -49,13 +70,13 @@ form {
     padding: 30px;
     border-radius: 12px;
     background: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     margin-bottom: 30px;
 }
 
 form:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
     transform: translateY(-3px);
 }
 
