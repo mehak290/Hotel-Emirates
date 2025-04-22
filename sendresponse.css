@@ -48,7 +48,7 @@ h1::after {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: #26a69a;
+    background: #080808;
     border-radius: 2px;
 }
 
