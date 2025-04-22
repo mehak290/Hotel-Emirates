@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Emirates</title>
+    <script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-icon">E</span>
+          
+          <div class="logo-text">
+            <h2>EMIRATES</h2>
+            <p>A Stay Beyond Expectations.</p>
+          </div>
+        </div>
+        <!-- NAV LINKS -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#">Login/Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <!-- HOME -->
+    <section class="head" id="home">
+      <img src="logo.jpeg" length="70px" width="70px"><br>
+      <h1 class="head-title">EMIRATES</h1><hr>
+      </section>
+
+      <!-- BOOKING SECTION -->
+
+    <section class="booking-form">
+      <form>
+        <div class="form-group">
+          <label for="arrival">Arrival Date</label>
+          <input type="date" id="arrival" placeholder="DD-MM-YYYY">
+        </div>
+        <div class="form-group">
+          <label for="departure">Departure Date</label>
+          <input type="date" id="departure" placeholder="DD-MM-YYYY">
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <input type="text" id="guests" placeholder="No. Of Guests">
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile No.</label>
+          <input type="tel" id="mobile" placeholder="Mobile No.">
+        </div>
+        <!-- BUTTON -->
+        <button class="send-btn">Send Response</button>
+      </form>
+    </section>
+    <!-- TEXTAREA -->
+    <div class="new-container">
+      <section class="new-container-section">
+        <h1>Your Best Holidays Start Here</h1>
+        <p>
+          Welcome to a hidden realm of extraordinary accommodations with luxury, comfort, and adventure converge.
+          Our hotels offer an unparalleled escape from the ordinary, inviting you to explore a subterranean world of wonders.<br>
+          Here you'll find everything you need to know as a tourist.<br> <br> <hr>
+          <!-- FOOD -->
+          <section class="new-container-section" id="dining">
+          <h1>Delicious Dishes Gallery 🍽️</h1><br></section>
+          <div id="food-container">
+            <!-- slide left button -->
+            <div class="slider-wrapper">
+              <button class="nav left">&#10094;</button>
+        
+              <div class="slider">
+                <div class="slides">
+                  
+                    <img src="fries.jpeg" alt="Food 1">
+                    <p class="caption">~Crispy Fries</p>
+                    <img src="pavbhaji.jpeg" alt="Food 2">
+                    <p class="caption">~Pav Bhaji</p>
+                    <img src="dosa.jpeg" alt="Food 3">
+                    <p class="caption">~South Indian Dosa</p>
+                    <img src="parantha.jpeg" alt="Food 4">
+                    <p class="caption">~Stuffed Parantha</p>
+                    <img src="frutchat.jpeg" alt="Food 5">
+                    <p class="caption">~Fruit Chaat</p>
+                    <img src="cocktails.jpeg" alt="Food 6">
+                    <p class="caption">~Refreshing Mocktails</p>
+                    <img src="icecream.jpeg" alt="Food 7">
+                    <p class="caption">~Ice Cream Sundae</p>
+                </div>
+              </div>
+              <!-- slide right button -->
+              <button class="nav right">&#10095;</button>
+            </div>
+          </div><br>
+          <!-- special dishes -->
+          <section class="new-container-section" id="dining">
+            <h1>Special Dishes 🍽️</h1><br></section>
+            <div id="special" class="special-dish-container">
+              <div class="special-dish">
+                <img src="dham.jpeg" alt="Kangri Dham">
+                <h2>Kangri Dham</h2>
+                <p> North Indian delicacy & perfect for every occasion.</p>
+              </div>
+            
+              <div class="special-dish">
+                <img src="patrode.jpeg" alt="Patrode">
+                <h2>Patrode</h2>
+                <p>Spicy, aromatic & layered to perfection.</p>
+              </div>
+            
+              <div class="special-dish">
+                <img src="siddu.jpeg" alt="siddu">
+                <h2>Siddu</h2>
+                <p>Soft dumplings in luscious gravy.</p>
+              </div>
+            </div>
+        </p>
+      </section>
+    </div>
+
+  </body>
+</html>
