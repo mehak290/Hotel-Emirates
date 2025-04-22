@@ -1,54 +1,71 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a7ffeb, #e0f7fa);
+    padding: 40px 0;
+    overflow-y: auto;
+}
+
+.form-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #a7ffeb, #e0f7fa); 
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
 h1 {
     color: #004d40;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 28px;
+    font-weight: 600;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #26a69a;
+    border-radius: 2px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 400px;
+    gap: 22px;
     width: 100%;
     padding: 30px;
     border-radius: 12px;
     background: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
 }
-.form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.form-container form {
-    width: 100%;
-    max-width: 500px;
-}
-
 
 form:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+form:last-child {
+    margin-bottom: 0;
 }
 
 label {
-    font-weight: 600;
+    font-weight: 500;
     color: #333333;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 15px;
+    display: block;
 }
 
 input[type="text"],
@@ -56,35 +73,65 @@ input[type="email"],
 input[type="tel"],
 input[type="number"],
 input[type="date"] {
-    padding: 10px 14px;
+    padding: 12px 16px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
 }
 
 input:focus {
     border-color: #26a69a;
-    box-shadow: 0 0 4px rgba(38, 166, 154, 0.5);
+    box-shadow: 0 0 0 3px rgba(38, 166, 154, 0.2);
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: #aaa;
 }
 
 button {
-    background-color: #006064;
+    background-color: #00796b;
     color: #ffffff;
     border: none;
-    padding: 12px;
+    padding: 14px;
     font-size: 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 button:hover {
     background-color: #004d40;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 77, 64, 0.2);
 }
-.form-container form + form {
-    margin-top: 30px; 
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 77, 64, 0.2);
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px 15px;
+    }
+    
+    form {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    input, button {
+        padding: 10px 12px;
+    }
 }
