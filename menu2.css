@@ -1,0 +1,60 @@
+#food-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 300px;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .caption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #444;
+  }
+  
+  .nav {
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .nav:hover {
+    background-color: #eee;
+  }
+  
