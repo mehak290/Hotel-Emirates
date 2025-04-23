@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password - OTP</title>
-    <link rel="stylesheet" href="D:\scm\final_scm\style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="otp-container">
@@ -12,12 +12,51 @@
         <form id="otpForm">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <button type="button" id="generateOtpButton">Generate OTP</button>
+    <button onclick="generateOTP()">Get OTP</button>
+    <p id="otpDisplay"></p>
+    <p id="expiryMessage"></p>
+
+    <script>
+        let otp;
+        let timeout;
+
+        function generateOTP(length = 6) {
+            otp = "";
+            const digits = "0123456789";
+
+            for (let i = 0; i < length; i++) {
+                otp += digits[Math.floor(Math.random() * digits.length)];
+            }
+
+            document.getElementById("otpDisplay").innerText = "Your OTP is: " + otp;
+            document.getElementById("expiryMessage").innerText = "Valid for 30 seconds";
+
+            // Clear previous timeout and set a new one to expire OTP
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                document.getElementById("otpDisplay").innerText = "OTP Expired!";
+                document.getElementById("expiryMessage").innerText = "";
+            }, 30000); // 30 seconds expiry
+        }
+        //otp vertification
+    function verifyOTP() {
+        const correctOTP = "123456"; // Example OTP
+        const enteredOTP = document.getElementById("otpInput").value;
+        
+        if (enteredOTP === correctOTP) {
+            document.getElementById("result").innerText = "OTP Verified ✅";
+        } else {
+            document.getElementById("result").innerText = "Invalid OTP ❌";
+        }
+    }
+
+    </script>
+            
             <p id="otpMessage"></p>
             <br>
             <label for="otp">Enter OTP:</label>
             <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required>
-            <button type="button" id="verifyOtpButton"><a href="D:\scm\ForgotFINAL.html">Verify OTP</a></button>
+            <button type="button" id="verifyOTP" href="D:\scm\final_scm\forgot password.html">Verify OTP</button>
             <p id="verifyMessage"></p>
         </form>
     </div>
