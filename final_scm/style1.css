@@ -45,17 +45,9 @@
   }
   
   /* Background hero (from earlier) */
-  .hero-section {
-    background-image: url("https://www.olympicholidays.com/media/46591/1257775333d0096ec6c83575373e3a21d129ff8fef.jpg"); /* Update to your image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+ .hero section{
+  
+ }
   
   .overlay {
     background-color: rgba(0, 0, 0, 0.6);
