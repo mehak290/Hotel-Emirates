@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       alert('Login successful!');
     }
   });
-  function validateEmail(email).addEventListener('Valide Email') {
+  function validateEmail(email) {
     // Regular expression for validating email format
     const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 

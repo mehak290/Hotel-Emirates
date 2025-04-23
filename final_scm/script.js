@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       alert('Login successful!');
     }
   });
-  function validateEmail(email).addEventListener('Valide Email') {
+  function validateEmail(email) {
     // Regular expression for validating email format
     const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
@@ -168,27 +168,35 @@ document.getElementById('generateOtpButton').addEventListener('click', function 
       return;
   }
 
-  // Simulate OTP generation
-  const otp = Math.floor(100000 + Math.random() * 900000); // Generate 6-digit OTP
-  localStorage.setItem('generatedOtp', otp); // Store OTP locally for validation
-  otpMessage.textContent = `OTP sent to ${email}: ${otp}`;
-  otpMessage.style.color = "green";
-});
+  function generateOTP(length = 6) {
+    let otp = "";
+    const digits = "0123456789"; // You can also include letters if needed
 
-document.getElementById('verifyOtpButton').addEventListener('click', function () {
-  const enteredOtp = document.getElementById('otp').value;
-  const storedOtp = localStorage.getItem('generatedOtp');
-  const verifyMessage = document.getElementById('verifyMessage');
+    for (let i = 0; i < length; i++) {
+        otp += digits[Math.floor(Math.random() * digits.length)];
+    }
 
-  if (enteredOtp === storedOtp) {
-      verifyMessage.textContent = "OTP verified successfully!";
-      verifyMessage.style.color = "green";
-      localStorage.removeItem('generatedOtp'); // Clear stored OTP
-  } else {
-      verifyMessage.textContent = "Invalid OTP. Please try again.";
-      verifyMessage.style.color = "red";
-  }
-});
+    return otp;
+}
+
+// // Example usage
+// const otp = generateOTP();
+// console.log("Your OTP is:", otp);
+
+// document.getElementById('verifyOtpButton').addEventListener('click', function () {
+//   const enteredOtp = document.getElementById('otp').value;
+//   const storedOtp = localStorage.getItem('generatedOtp');
+//   const verifyMessage = document.getElementById('verifyMessage');
+
+//   if (enteredOtp === storedOtp) {
+//       verifyMessage.textContent = "OTP verified successfully!";
+//       verifyMessage.style.color = "green";
+//       localStorage.removeItem('generatedOtp'); // Clear stored OTP
+//   } else {
+//       verifyMessage.textContent = "Invalid OTP. Please try again.";
+//       verifyMessage.style.color = "red";
+//   }
+// });
 
 // script.js
 function submitForm() {
@@ -230,6 +238,19 @@ const loginForm = document.getElementById('loginForm');
     });
 
     //otp
+
+    //otp vertification
+    function verifyOTP() {
+        const correctOTP = "123456"; // Example OTP
+        const enteredOTP = document.getElementById("otpInput").value;
+        
+        if (enteredOTP === correctOTP) {
+            document.getElementById("result").innerText = "OTP Verified ✅";
+        } else {
+            document.getElementById("result").innerText = "Invalid OTP ❌";
+        }
+    }
+
    
 
 
@@ -243,21 +264,21 @@ function generateOTP(length = 6) {
 }
 
 // Example usage:
-const otp = generateOTP();
-console.log("Generated OTP:", otp);
+// const otp = generateOTP();
+// console.log("Generated OTP:", otp);
 
 
-// Storing OTP
-sessionStorage.setItem("otp", otp);
+// // Storing OTP
+// sessionStorage.setItem("otp", otp);
 
-// Function to validate OTP
-function validateOTP(userInputOTP) {
-    const storedOTP = sessionStorage.getItem("otp");
-    return userInputOTP === storedOTP;
-}
+// // Function to validate OTP
+// function validateOTP(userInputOTP) {
+//     const storedOTP = sessionStorage.getItem("otp");
+//     return userInputOTP === storedOTP;
+// }
 
-// Example validation:
-console.log(validateOTP("123456")); // Returns true or false
+// // Example validation:
+// console.log(validateOTP("123456")); // Returns true or false
 
 
 const stars = document.querySelectorAll(".star");
