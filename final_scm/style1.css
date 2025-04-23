@@ -1,8 +1,8 @@
 /* Base container styling for sections */
-.container {
-    max-width: 1000px;
+.container{
+    max-width: 2000px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 60px 20px ;
   }
   
   /* Section spacing */
