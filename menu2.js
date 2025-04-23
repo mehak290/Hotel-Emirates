@@ -9,6 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateSlider() {
     const slideWidth = slide[0].clientWidth;
     slides.style.transform = `translateX(-${index * slideWidth}px)`;
+
+    // Disable the previous button if on the first slide
+    if (index === 0) {
+      prev.disabled = true;
+    } else {
+      prev.disabled = false;
+    }
+
+    // Disable the next button if on the last slide
+    if (index === slide.length - 3) {
+      next.disabled = true;
+    } else {
+      next.disabled = false;
+    }
   }
 
   next.addEventListener("click", () => {
@@ -25,5 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  window.addEventListener("resize", updateSlider); 
+  // Handle window resizing
+  window.addEventListener("resize", updateSlider);
+
+  // Initial setup
+  updateSlider();
 });
