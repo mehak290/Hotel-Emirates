@@ -45,8 +45,16 @@
   }
   
   /* Background hero (from earlier) */
- .hero section{
-  
+ .hero-section {
+    background-image: url("https://wallpaperfx.com/view_image/5-star-hotel-room-1920x1200-wallpaper-12218.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
  }
   
   .overlay {
