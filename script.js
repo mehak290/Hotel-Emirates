@@ -307,3 +307,4 @@ stars.forEach(star => {
             document.getElementById('otp').textContent = Your OTP is: ${otp};
         }
 
+        
