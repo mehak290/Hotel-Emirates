@@ -59,10 +59,14 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #dfab3a;
+    background: rgb(215, 144, 12);
     color: white;
     text-decoration: none;
     border-radius: 5px;
+  }
+
+  .booking-btn:hover {
+  background-color: #a38540;
   }
   
   .contact-form {
@@ -85,7 +89,7 @@
   }
   
   .contact-form button {
-    background-color: #dfab3a;
+    background-color: rgb(215, 144, 12);
     color: white;
     border: none;
     padding: 12px;
