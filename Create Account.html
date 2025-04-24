@@ -9,46 +9,42 @@
 <body>
     <div class="form-container">
         <h1>Create New Account</h1>
-        <form id="signup-form">
+        <form id="signup-form" onsubmit="validateEmail(event)">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-            <!-- <label for="email">Email:</label>
-<input type="email" id="email" name="email" required>
-<span id="emailError" style="color: red; display: none;">Please enter a valid email address.</span>
-
-<button type="button" onclick="validateEmail()">Submit</button>
-
-<script>
-    function validateEmail() {
-        const emailInput = document.getElementById('email');
-        const emailError = document.getElementById('emailError');
-
-        // Regular Expression for Email Validation
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (emailPattern.test(emailInput.value)) {
-            emailError.style.display = 'none';
-            alert('Email is valid!');
-            // Proceed with form submission or other actions
-        } else {
-            emailError.style.display = 'block';
-        }
-    }
-</script> -->
-            <!-- <label for="email">Email:</label>
-<input type="email" id="email" name="email" required> -->
             
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p id="emailError" style="color: red; display: none;">Invalid email address. Please try again.</p>
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            
             <div class="remember-container">
                 <input type="checkbox" id="rememberMe">
                 <label for="rememberMe">Remember Me</label>
             </div>
-            <button type="button" onclick="submitForm()">Submit</button>
+            
+            <button type="submit">Submit</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function validateEmail(event) {
+            event.preventDefault(); // Prevent form submission for validation
+            const email = document.getElementById('email').value;
+            const emailError = document.getElementById('emailError');
+
+            // Email regex pattern for validation
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (emailPattern.test(email)) {
+                emailError.style.display = 'none'; // Hide error message if valid
+                alert('Form submitted successfully!');
+                document.getElementById('signup-form').submit(); // Submit the form if email is valid
+            } else {
+                emailError.style.display = 'block'; // Show error message if invalid
+            }
+        }
+    </script>
 </body>
 </html>

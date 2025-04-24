@@ -1,3 +1,19 @@
+function validateEmail(event) {
+    event.preventDefault(); // Prevent form submission for validation
+    const email = document.getElementById('email').value;
+    const emailError = document.getElementById('emailError');
+
+    // Email regex pattern for validation
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (emailPattern.test(email)) {
+        emailError.style.display = 'none'; // Hide error message if valid
+        alert('Form submitted successfully!');
+        document.getElementById('signup-form').submit(); // Submit the form if email is valid
+    } else {
+        emailError.style.display = 'block'; // Show error message if invalid
+    }
+}
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
   
