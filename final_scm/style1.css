@@ -106,4 +106,117 @@
     background-color: #003049;
     color: #fff;
   }
-  
+  .image-bg {
+    background: url('your-image.jpg') no-repeat center center;
+    background-size: cover; /* Makes the image fit the container */
+    width: 300px;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .centered-image {
+    display: block;
+    margin: 0 auto;
+  }
+  /* Global Styles */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-section {
+background: url('hero-image.jpg') no-repeat center center/cover;
+height: 100vh;
+position: relative;
+}
+
+.overlay {
+background-color: rgba(0, 0, 0, 0.6);
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.hero-text h1 {
+color: #fff;
+font-family: 'Dancing Script', cursive;
+font-size: 3rem;
+margin: 0;
+}
+
+.hero-text .tagline {
+color: #fff;
+font-size: 1.5rem;
+}
+
+.hero-text h3 {
+color: #e0e0e0;
+font-size: 1.2rem;
+margin-top: 20px;
+}
+
+/* Section Containers */
+.container {
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+font-size: 2rem;
+text-align: center;
+margin-bottom: 20px;
+}
+
+/* About Section */
+.about img {
+display: block;
+margin: 20px auto;
+border-radius: 10px;
+}
+
+/* Mission Section */
+.mission {
+background-color: #e8f4f8;
+padding: 20px;
+border-radius: 10px;
+}
+
+.mission img {
+display: block;
+margin: 20px auto;
+border-radius: 10px;
+}
+
+/* Values Section */
+.values ul {
+list-style: none;
+padding: 0;
+}
+
+.values li {
+background-color: #ffefa1;
+padding: 10px;
+margin: 10px 0;
+border-radius: 5px;
+
+}
+
+/* Footer */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+}
