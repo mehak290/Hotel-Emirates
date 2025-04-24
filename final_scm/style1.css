@@ -1,20 +1,20 @@
 /* Base container styling for sections */
-.container {
-    max-width: 1000px;
+.container{
+    max-width: 2000px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 60px 20px ;
   }
   
   /* Section spacing */
   section {
-    background-color: rgba(217, 203, 174, 0.628);
-    margin-bottom: 20px;
+    background-color: rgba(241, 216, 169, 0.628);
+    margin-bottom: 30px;
   }
   
   h2 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #444;
+    color: rgb(33, 97, 61);
   }
   
   p {
@@ -23,12 +23,12 @@
   }
 
   .tagline {
-    font-family: 'Dancing Script', cursive;
-    font-size: 800px;  
+    font-family: 'Dancing Script', cursive ;
+    font-size: 200px;  
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 2;
     word-wrap: break-word;
     width: 100%;
@@ -45,8 +45,8 @@
   }
   
   /* Background hero (from earlier) */
-  .hero-section {
-    background-image: url("https://www.olympicholidays.com/media/46591/1257775333d0096ec6c83575373e3a21d129ff8fef.jpg"); /* Update to your image */
+ .hero-section {
+    background-image: url("https://wallpaperfx.com/view_image/5-star-hotel-room-1920x1200-wallpaper-12218.jpg"); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -55,10 +55,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+ }
   
   .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0,0,0,0.6);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -69,18 +69,18 @@
   .hero-text {
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: white;
     padding: 0 20px;
   }
   
   .hero-text h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 3.5em;
+    margin-bottom: 30px;
     color: #FFD700;
   }
   
   .hero-text p {
-    font-size: 1.3em;
+    font-size: 2em;
   }
   
   /* Footer */
@@ -91,4 +91,3 @@
     color: #fff;
   }
   
-
