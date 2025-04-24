@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,6 +49,119 @@
             } else {
                 document.getElementById('verifyMessage').innerText = "Invalid OTP ❌";
             }
+        }
+        // Clear the message after 5 seconds
+        setTimeout(() => {
+                verifyMessage.innerText = "";
+            }, 5000000); // 5000 milliseconds = 5 seconds
+        
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #verifyMessage {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Forgot Password</h1>
+        <form id="otpForm" onsubmit="generateOTP(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Generate OTP</button>
+        </form>
+        <br>
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otpInput" name="otp" placeholder="Enter the OTP" required>
+        <button onclick="verifyOTP()">Verify OTP</button>
+        <div id="verifyMessage"></div>
+    </div>
+    <script>
+        let generatedOTP = ""; // Variable to store the OTP
+
+        function generateOTP(event) {
+            event.preventDefault(); // Prevent form refresh
+            const email = document.getElementById('email').value;
+
+            // Log email and OTP to the console
+            console.log(`Email entered: ${email}`);
+            generatedOTP = Math.floor(100000 + Math.random() * 900000);
+            console.log(`Generated OTP: ${generatedOTP}`);
+            alert(`Your OTP is: ${generatedOTP}`); // Optional alert for users
+        }
+
+        function verifyOTP() {
+            const enteredOTP = document.getElementById('otpInput').value;
+            const verifyMessage = document.getElementById('verifyMessage');
+
+            if (enteredOTP === generatedOTP.toString()) {
+                verifyMessage.innerText = "OTP Verified ✅";
+                verifyMessage.style.color = "green";
+            } else {
+                verifyMessage.innerText = "Invalid OTP ❌";
+                verifyMessage.style.color = "red";
+            }
+
+            // Clear the message after 5 seconds
+            setTimeout(() => {
+                verifyMessage.innerText = ""; // Clear the message
+            }, 5000); // 5000 milliseconds = 5 seconds
         }
     </script>
 </body>
