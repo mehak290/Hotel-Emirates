@@ -278,3 +278,32 @@ stars.forEach(star => {
         ratingValue.textContent = `Rating: ${value}`;
     });
 });
+// function generateOTP() {
+//     // Generate a 6-digit random OTP
+//     const otp = Math.floor(100000 + Math.random() * 900000);
+//     // Display the OTP in the div
+//     document.getElementById('otp').textContent = Your OTP is: ${otp};
+// }
+//  function generateOTP() {
+//             // Generate a 6-digit random OTP
+//             const otp = Math.floor(100000 + Math.random() * 900000);
+//             // Display the OTP in the div
+//             document.getElementById('otp').textContent = Your OTP is: ${otp};
+//         }
+
+        function generateOTP(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+
+            // Get the entered email
+            const email = document.getElementById('email').value;
+
+            // Log the email to the console
+            console.log(Email entered: ${email});
+
+            // Generate a 6-digit random OTP
+            const otp = Math.floor(100000 + Math.random() * 900000);
+
+            // Display the OTP on the webpage
+            document.getElementById('otp').textContent = Your OTP is: ${otp};
+        }
+
