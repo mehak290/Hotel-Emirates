@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+        ul {
+            list-style: disc;
+            margin: 10px 0 10px 20px;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            text-align: center;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p>Before logging in to our hotel website, please read and accept the following terms and conditions:</p>
+        
+        <ul>
+            <li>You agree to provide accurate and up-to-date information during the login process.</li>
+            <li>Your account is for personal use only and must not be shared with others.</li>
+            <li>We reserve the right to suspend or terminate accounts that violate our policies.</li>
+            <li>Any unauthorized access or misuse of the website will result in legal action.</li>
+            <li>Your data will be processed in accordance with our privacy policy.</li>
+        </ul>
+        
+        <p>By clicking "I Agree," you confirm that you have read and accepted these terms.</p>
+        
+        <button onclick="acceptTerms()">I Agree</button>
+    </div>
+
+    <script>
+        function acceptTerms() {
+            alert("Thank you for accepting the terms and conditions. You may now log in.");
+            // Redirect to login page (Replace 'login.html' with your actual login page URL)
+            window.location.href = 'login pagef.html';
+        }
+    </script>
+</body>
+</html>

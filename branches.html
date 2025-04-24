@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="branch.css">
-    <title>Hotel Emirates Branches</title>
-    <script src="branchscript.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Emirates Branches</title>
+  <link rel="stylesheet" href="branch.css">
+  <script defer src="branchscript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <div class="container">
-        <button id="revealBranches">Know about our branches</button>
-        <div class="branches">
-          <div class="branch left">
-            🌆 <strong>Dubai</strong> 
-            <p>Welcome to Emirates Hotel~Dubai, where luxury meets legacy in the heart of the Middle East's most iconic city. Situated near the 
-                shimmering skyline of Downtown Dubai, our hotel offers effortless access to landmarks like the Burj Khalifa, Dubai Mall, and the Dubai Opera. 
-                Emirates is more than just a stay — it's a curated experience, combining modern design, world-class amenities, and the warmth of traditional 
-                Arabian hospitality.</p>
-          </div>
-          <div class="branch right">
-            🏞️ <strong>Shimla</strong>
-            <p>Welcome to Emirates Hotel~Shimla, where timeless charm meets unparalleled comfort in the scenic beauty of the Himalayas. 
-                Nestled in the tranquil hills of Shimla, our hotel offers easy access to the city's iconic landmarks and breathtaking landscapes like the Ridge,
-                Temples. Emirates Hotel is more than just a stay; it's an experience — a perfect blend of modern luxury and the warmth of traditional 
-                hospitality.</p>
-      </div></div></div>
+  <div class="container">
+    <h1>🌍 Our Prestigious Branches</h1>
+    <button id="revealBranches">Know about our branches</button>
+    
+    <div class="branches hidden">
       
-    </body>
+      <div class="branch">
+        <h2>🌆 Dubai</h2>
+        <p class="short">Luxury meets legacy in Downtown Dubai.</p>
+        <p class="full hidden">Welcome to Emirates Hotel~Dubai, where luxury meets legacy in the heart of the Middle East's most iconic city. Located near Burj Khalifa, Dubai Mall, and Dubai Opera, our hotel blends world-class amenities with warm Arabian hospitality.</p>
+        <button class="toggleBtn">Read More</button>
+      </div>
+      <div class="branch">
+        <h2>🏞️ Shimla</h2>
+        <p class="short">Charm and comfort in the Himalayan hills.</p>
+        <p class="full hidden">Emirates Hotel~Shimla offers timeless charm amid Himalayan serenity. Near attractions like The Ridge and ancient temples, it blends modern luxury with traditional comfort.</p>
+        <button class="toggleBtn">Read More</button>
+      </div>
+
+      <div class="branch">
+        <h2>🏙️ Mumbai</h2>
+        <p class="short">Elegance on the bustling western coast.</p>
+        <p class="full hidden">Experience the vibrant soul of India in our Mumbai branch. Nestled in South Bombay near Marine Drive and Colaba, Emirates Hotel~Mumbai combines heritage architecture with modern opulence.</p>
+        <button class="toggleBtn">Read More</button>
+      </div>
+
+      <div class="branch">
+        <h2>🌉 London</h2>
+        <p class="short">A royal retreat in central London.</p>
+        <p class="full hidden">Our London branch, located near Hyde Park and Oxford Street, is a gateway to royal elegance and contemporary sophistication. Enjoy afternoon tea and a timeless British experience.</p>
+        <button class="toggleBtn">Read More</button>
+      </div>
+
+      <div class="branch">
+        <h2>🎌 Tokyo</h2>
+        <p class="short">Tradition meets technology in Tokyo.</p>
+        <p class="full hidden">Emirates Hotel~Tokyo lies in the heart of Shibuya. With minimal design, tech-integrated rooms, and a Zen-inspired spa, this branch offers a tranquil contrast to the buzzing city.</p>
+        <button class="toggleBtn">Read More</button>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+</body>
 </html>
