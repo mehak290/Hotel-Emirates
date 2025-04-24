@@ -59,7 +59,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #caa75b;
+    background: #dfab3a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -85,7 +85,7 @@
   }
   
   .contact-form button {
-    background-color: #caa75b;
+    background-color: #dfab3a;
     color: white;
     border: none;
     padding: 12px;
