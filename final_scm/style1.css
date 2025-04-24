@@ -7,14 +7,14 @@
   
   /* Section spacing */
   section {
-    background-color: rgba(241, 216, 169, 0.628);
+    background-color: #5a5c87;
     margin-bottom: 30px;
   }
   
   h2 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: rgb(33, 97, 61);
+    color: rgb(251, 251, 251);
   }
   
   p {
