@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // button
-// script.js
-
 document.querySelector('btn').addEventListener('click', function() {
   window.location.href = "about.html";
 });
