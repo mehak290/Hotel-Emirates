@@ -6,7 +6,7 @@
   <title>Feedback Form</title>
   <style>
     /* Background from Uiverse.io by SelfMadeSystem */
-    .container::after {
+    .container-bg::after {
       content: "";
       position: absolute;
       inset: 0;
@@ -17,34 +17,24 @@
       transform-origin: center;
     }
 
-    .container {
+    .container-bg {
       position: absolute;
-      background-image: radial-gradient(
-        circle at 50% 50%,
-        #0000 0,
-        #0000 2px,
-        hsl(0 0% 4%) 2px
-      );
+      background-image: radial-gradient(circle at 50% 50%, #0000 0, #0000 2px, hsl(0 0% 4%) 2px);
       background-size: 8px 8px;
       width: 100%;
       height: 100%;
       overflow: hidden;
     }
 
-    .container::before {
+    .container-bg::before {
       content: "";
       position: absolute;
       inset: -8em;
       z-index: -1;
       --f: blur(7em) brightness(5);
-      --c: #09f;
       animation: blobs-1e28bd3d 150s linear infinite, thingy 5s linear infinite;
       background-color: #000;
-      background-image: radial-gradient(
-          ellipse 66px 50px at 50% 50%,
-          #0f0 0%,
-          transparent 100%
-        ),
+      background-image: radial-gradient(ellipse 66px 50px at 50% 50%, #0f0 0%, transparent 100%),
         radial-gradient(ellipse 77px 60px at 50% 50%, #0f0 0%, transparent 100%),
         radial-gradient(ellipse 78px 100px at 50% 50%, #0f0 0%, transparent 100%),
         radial-gradient(ellipse 73px 96px at 50% 50%, #0f0 0%, transparent 100%),
@@ -77,8 +67,7 @@
       }
     }
 
-    body,
-    html {
+    body, html {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -86,7 +75,6 @@
       background-color: #000;
     }
 
-    /* Feedback form styles */
     .feedback-form {
       position: relative;
       z-index: 2;
@@ -102,27 +90,64 @@
 
     .feedback-form h2 {
       text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      position: relative;
+      color: white;
       margin-bottom: 20px;
     }
 
-    .feedback-form label {
-      display: block;
-      margin-top: 10px;
+    .container .label {
+      font-size: 15px;
+      padding-left: 10px;
+      position: absolute;
+      top: 13px;
+      transition: 0.3s;
+      pointer-events: none;
     }
 
-    .feedback-form input,
-    .feedback-form textarea {
+    .input {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
+      height: 45px;
       border: none;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
+      outline: none;
+      padding: 0px 10px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 15px;
+      background-color: transparent;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+
+    .input:focus,
+    .input:valid {
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+
+    .container .input:valid ~ .label,
+    .container .input:focus ~ .label {
+      transition: 0.3s;
+      padding-left: 2px;
+      transform: translateY(-35px);
+    }
+
+    textarea.input {
+      height: auto;
+      resize: vertical;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
 
     .feedback-form button {
-      margin-top: 20px;
       width: 100%;
       padding: 12px;
       background-color: #00ff99;
@@ -137,7 +162,7 @@
       background-color: #00cc77;
     }
 
-    /* Fixed star rating system */
+    /* Star rating */
     .rating {
       direction: rtl;
       unicode-bidi: bidi-override;
@@ -183,17 +208,21 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container-bg">
     <form class="feedback-form">
       <h2>Feedback Form</h2>
 
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
+      <div class="container">
+        <input type="text" id="name" name="name" class="input" required />
+        <label class="label" for="name">Name</label>
+      </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+      <div class="container">
+        <input type="email" id="email" name="email" class="input" required />
+        <label class="label" for="email">Email</label>
+      </div>
 
-      <label for="rating">Rating</label>
+      <label>Rating</label>
       <div class="rating">
         <input type="radio" name="rating" id="star5" value="5" required><label for="star5"></label>
         <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
@@ -202,8 +231,10 @@
         <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
       </div>
 
-      <label for="comments">Comments</label>
-      <textarea id="comments" name="comments" rows="4" required></textarea>
+      <div class="container">
+        <textarea id="comments" name="comments" rows="4" class="input" required></textarea>
+        <label class="label" for="comments">Comments</label>
+      </div>
 
       <button type="submit">Submit Feedback</button>
     </form>
