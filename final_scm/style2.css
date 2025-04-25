@@ -8,12 +8,12 @@
     font-family: 'Roboto', sans-serif;
     background-color: #e4cfcfa0;
     color: #333;
-    line-height: 1.6;
+    line-height: 2;
   }
   
   .contact-header {
     background: url("https://i.pinimg.com/736x/72/8b/a0/728ba0ae87c03d54732676087635e384.jpg") center/cover no-repeat;
-    padding: 80px 20px;
+    padding: 80px 20px ;
     text-align: center;
     color: black;
   }
@@ -32,11 +32,12 @@
     gap: 40px;
   }
   
+  
   .contact-info {
     flex: 1;
     min-width: 300px;
   }
-  
+
   .contact-info h2, .contact-form h2 {
     margin-bottom: 15px;
     color: darkgreen;
@@ -44,24 +45,28 @@
   
   .social-links a {
     display: inline-block;
-    margin-right: 10px;
-    color: #333;
+    margin-right: 20px;
+    color: rgb(133, 21, 21);
     text-decoration: none;
     font-weight: bold;
   }
   
   .social-links a:hover {
-    color: #caa75b;
+    color: red;
   }
   
   .booking-btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #caa75b;
+    background: rgb(215, 144, 12);
     color: white;
     text-decoration: none;
     border-radius: 5px;
+  }
+
+  .booking-btn:hover {
+  background-color: #a38540;
   }
   
   .contact-form {
@@ -84,7 +89,7 @@
   }
   
   .contact-form button {
-    background-color: #caa75b;
+    background-color: rgb(215, 144, 12);
     color: white;
     border: none;
     padding: 12px;
