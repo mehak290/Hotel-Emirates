@@ -137,7 +137,7 @@
       background-color: #00cc77;
     }
 
-    /* Star rating system from Uiverse.io by andrew-demchenk0 */
+    /* Fixed star rating system */
     .rating {
       direction: rtl;
       unicode-bidi: bidi-override;
@@ -147,7 +147,10 @@
 
     .rating:not(:checked) > input {
       position: absolute;
-      appearance: none;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      pointer-events: none;
     }
 
     .rating:not(:checked) > label {
