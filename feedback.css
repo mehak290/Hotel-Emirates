@@ -1,5 +1,4 @@
 
-/* Reset and base styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,14 +8,20 @@
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e0f7fa, #80deea);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+  
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
   }
   
-  /* Feedback Form Styling */
+  
   .feedback-form {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
