@@ -316,47 +316,62 @@ body {
           height: 200px;
         }
       }
-      .royal-container {
-        background-color: #05122a; /* Royal blue */
+      /* room container */
+      .room-container {
+        display: flex;
+        background-color: rgb(6, 21, 66);
         color: white;
-        padding: 40px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        max-width: 600px;
-        text-align: center;
-        animation: fadeIn 1s ease-in-out;
-      }
-      
-      .royal-container h1 {
-        font-size: 2.5em;
-        margin-bottom: 15px;
-        letter-spacing: 1px;
-      }
-      
-      .royal-container p {
-        font-size: 1.1em;
-        margin-bottom: 30px;
-        line-height: 1.6;
-      }
-      
-      .royal-button {
-        background-color: white;
-        color: #0B3D91;
-        border: none;
-        padding: 12px 25px;
-        font-size: 1em;
-        font-weight: bold;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: all 0.3s ease;
         text-decoration: none;
-        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        min-height: 300px;
       }
       
-      .royal-button:hover {
-        background-color: #e0e0e0;
-        color: #6464a8;
+      .room-image-section {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
       }
       
-
+      .room-image-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .book-now {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background-color: gold;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .book-now:hover {
+        background-color: darkorange;
+      }
+      
+      .room-text-section {
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .room-text-section h2 {
+        margin-bottom: 10px;
+      }
+      
+      .room-text-section p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
       
