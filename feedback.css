@@ -66,10 +66,12 @@
   
   .feedback-form input:focus,
   .feedback-form textarea:focus {
-    border-color: #26a69a;
-    box-shadow: 0 0 5px rgba(38, 166, 154, 0.3);
+    border-color: #009688;
+    box-shadow: 0 0 8px rgba(0, 150, 136, 0.4);
     outline: none;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
   }
+  
   
   .feedback-form button {
     width: 100%;
