@@ -43,17 +43,57 @@
     color: darkgreen;
   }
   
-  .social-links a {
-    display: inline-block;
-    margin-right: 20px;
-    color: rgb(133, 21, 21);
-    text-decoration: none;
-    font-weight: bold;
+  /* Regular link styling */
+.social-links a {
+  display: inline-block;
+  margin: 6px 12px 6px 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Icon styles */
+.social-links i {
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+/* Text span transition */
+.social-links span {
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* needed for transform to work */
+}
+
+/* On hover, only change the span (text) */
+.social-links a:hover span {
+  color: red;
+  transform: scale(1.1);
+}
+
+  /* Platform-specific colors */
+  .facebook i {
+    color: #1877F2;
   }
   
-  .social-links a:hover {
-    color: red;
+  .instagram i {
+    color: #E1306C;
   }
+  
+  .whatsapp i {
+    color: #25D366;
+  }
+  
+  .twitter i {
+    color: #000000; /* Twitter/X uses black */
+  }
+  
+  /* Hover effect (optional) */
+  .social-links a:hover i {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+  }
+  
   
   .booking-btn {
     display: inline-block;
@@ -104,7 +144,7 @@
   }
   
   .map-section {
-    padding: 40px 20px;
+    padding: 30px 20px;
     background-color: #efe9e994;
     text-align: center;
   }
