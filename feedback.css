@@ -1,4 +1,5 @@
 
+/* Reset and base styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,21 +8,23 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 20px;
   }
   
+  /* Feedback Form Styling */
   .feedback-form {
-    background: rgba(255, 255, 255, 0.8); /* subtle transparency for glass look */
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -29,17 +32,12 @@
   
   .feedback-form:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .feedback-form:hover {
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
   }
   
   .feedback-form h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: #333;
   }
   
@@ -47,32 +45,33 @@
     font-weight: 600;
     display: block;
     margin-bottom: 6px;
-    color: #555;
+    color: #444;
   }
   
   .feedback-form input,
   .feedback-form textarea {
     width: 100%;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   .feedback-form input:focus,
   .feedback-form textarea:focus {
-    border-color: #4CAF50;
+    border-color: #26a69a;
+    box-shadow: 0 0 5px rgba(38, 166, 154, 0.3);
     outline: none;
   }
   
   .feedback-form button {
     width: 100%;
     padding: 14px;
-    background: #4CAF50;
+    background: #26a69a;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -81,7 +80,7 @@
   }
   
   .feedback-form button:hover {
-    background: #45a049;
+    background: #1e8e86;
   }
   
   @media (max-width: 600px) {
