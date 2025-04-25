@@ -5,26 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Account</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div class="form-container">
+<body>   <div class="form-container">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+        
         <h1>Create New Account</h1>
-        <form id="signup-form">
+        <form id="signup-form" onsubmit="validateEmail(event)">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             
-            <label for="validateEmail">Email:</label>
-            <input type="validateEmail" id="validateEmail" name="validateEmail" required>
-            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p id="emailError" style="color: red; display: none;">Invalid email address. Please try again.</p>
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            
             <div class="remember-container">
                 <input type="checkbox" id="rememberMe">
                 <label for="rememberMe">Remember Me</label>
             </div>
-            <button type="button" onclick="submitForm()">Sign Up</button>
+            
+            <button type="submit">Submit</button>
         </form>
-    </div>
-    <script src="script.js"></script>
+        
+<div> <br><br><a href="D:\scm\homepage.html">Proceed to Home page</a></div>
+
+    <footer>
+        <p>&copy; 2025 Hotel Emirates. All rights reserved.</p>
+      </footer></div>
+    <script>
+        function validateEmail(event) {
+            event.preventDefault(); // Prevent form submission for validation
+            const email = document.getElementById('email').value;
+            const emailError = document.getElementById('emailError');
+
+            // Email regex pattern for validation
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (emailPattern.test(email)) {
+                emailError.style.display = 'none'; // Hide error message if valid
+                alert('Form submitted successfully!');
+                document.getElementById('signup-form').submit(); // Submit the form if email is valid
+            } else {
+                emailError.style.display = 'block'; // Show error message if invalid
+            }
+        }
+    </script>
 </body>
 </html>

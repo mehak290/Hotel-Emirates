@@ -292,3 +292,20 @@ body {
 .star.active {
   color: gold;
 }
+
+.rating {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.star {
+  color: #ccc; /* Default unselected color */
+  margin: 0 5px;
+}
+.star.hover,
+.star.selected {
+  color: gold; /* Highlighted/starred color */
+}
