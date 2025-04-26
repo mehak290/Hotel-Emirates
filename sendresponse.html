@@ -43,5 +43,19 @@
   </div>
 
   <script src="sendresponse.js"></script>
+  <script>
+    document.querySelector('.feedback-form').addEventListener('submit', function (e) {
+      const emailInput = document.getElementById('email');
+      const emailValue = emailInput.value.trim();
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+  
+      if (!emailPattern.test(emailValue)) {
+        e.preventDefault(); 
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+      }
+    });
+  </script>
+  
 </body>
 </html>
