@@ -402,11 +402,11 @@ HTML Code for Forgot Password Page
     <script src="script.js"></script>
 </body>
 </html>
-
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
+  font-family: Arial, sans-serif;
+  text-align : center;
+  margin: 50px auto;
+  max-width: 800px;
 }
 
 .forgot-password-container {
