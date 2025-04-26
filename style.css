@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
   
-  /* Topbar Header */
+  
 .topbar {
     background-color: #0b1b34;
     padding: 20px 0;
@@ -35,7 +35,7 @@ body {
 .logo-icon {
     font-size: 32px;
     font-weight: bold;
-    background-color: white;
+    background-color: rgb(201, 132, 132);
     color: #0b1b34;
     padding: 10px;
     border-radius: 5px;
@@ -69,7 +69,7 @@ body {
     border-bottom: 2px solid white;
 }
   
-  /* Head Section */
+  
 .head {
     background-image:url(finalbg.jpg);
     background-repeat: no-repeat;
