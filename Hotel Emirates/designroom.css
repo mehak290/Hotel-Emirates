@@ -82,6 +82,18 @@
         font-size: 16px;
         margin-top: 5px;
       }
+      .book-now {
+        background: #219653;
+        color: white;
+        border: none;
+        padding: 10px 22px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-weight: 500;
+        transition: background 0.3s ease;
+      }
+  
   
   
   
