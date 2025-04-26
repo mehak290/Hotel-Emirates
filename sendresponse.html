@@ -50,7 +50,7 @@
       const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
   
       if (!emailPattern.test(emailValue)) {
-        e.preventDefault(); // Stop form from submitting
+        e.preventDefault(); 
         alert('Please enter a valid email address.');
         emailInput.focus();
       }
