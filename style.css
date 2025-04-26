@@ -7,6 +7,7 @@
 }
 html,
 body {
+  background-color: #e4cfcfa0;
   scroll-behavior: smooth;
 }
   
@@ -363,7 +364,7 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background:#ef9348;
   color: white;
   border: none;
   border-radius: 4px;
@@ -372,7 +373,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f87676;
 }
 
 .error {
@@ -404,10 +405,6 @@ HTML Code for Forgot Password Page
 </body>
 </html>
 
-
-
-CSS Styling (Optional)
-Add styling for better user experience in style.css:
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -432,7 +429,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #ef9348;
     color: white;
     border: none;
     cursor: pointer;
@@ -440,7 +437,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #f22f7a;
 }
 
 .message {
@@ -471,7 +468,7 @@ input {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #ef9348;
   color: white;
   border: none;
   cursor: pointer;
