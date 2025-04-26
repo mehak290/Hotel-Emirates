@@ -20,6 +20,14 @@
         color: #1b1b1b;
         position: relative;
       }
+      heading-container p {
+        font-size: 16px;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      
       
   
 
