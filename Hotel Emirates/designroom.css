@@ -57,6 +57,10 @@
         height: auto;
         
       }
+      .swiper-slide:hover {
+        transform: translateY(-5px);
+      }
+  
   
   
       
