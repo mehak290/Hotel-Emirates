@@ -23,6 +23,13 @@
       heading-container .underline {
         width: 80px;
         height: 4px;
+        background-color: #219653;
+  margin: 10px auto 20px;
+  border-radius: 3px;
+  animation: slideIn 1s ease-in-out;
+}
+
+
       
       
       
