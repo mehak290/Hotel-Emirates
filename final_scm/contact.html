@@ -46,13 +46,12 @@
       <form action="#" method="post">
         <input type="text" name="name" placeholder="Full Name" required />
         <input type="email" name="email" placeholder="Email Address" required />
-        <input type="tel" name="phone" placeholder="Phone Number" />
+        <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{7,15}" title="Please enter a valid phone number (digits only)" required />
         <input type="text" name="subject" placeholder="Subject" />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
-
   </section>
 
   <section class="map-section">
