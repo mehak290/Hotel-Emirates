@@ -319,10 +319,10 @@ body {
       /* room container */
       .room-container {
         display: flex;
-        background-color: rgb(6, 21, 66);
-        color: white;
+        background-color: rgb(25, 34, 59);
+        color: rgb(255, 255, 255);
         text-decoration: none;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         overflow: hidden;
         transition: transform 0.3s ease;
         max-height: 500px;
@@ -374,4 +374,5 @@ body {
         font-size: 16px;
         line-height: 1.5;
       }
+
       
