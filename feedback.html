@@ -239,5 +239,18 @@
       <button type="submit">Submit Feedback</button>
     </form>
   </div>
+  <script>
+    document.querySelector('.feedback-form').addEventListener('submit', function (e) {
+      const emailInput = document.getElementById('email');
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+  
+      if (!emailPattern.test(emailInput.value.trim())) {
+        e.preventDefault(); 
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+      }
+    });
+  </script>
+  
 </body>
 </html>

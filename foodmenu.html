@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
         body {
             font-family: 'Garamond', serif;
             text-align: center;
-            background-color: #6b4f1f;
+            background-color: #f5e6cc;
         }
         .menu {
             max-width: 700px;
@@ -21,7 +22,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .menu-item {
-            border-bottom: 1px solid #b41212;
+            border-bottom: 1px solid #ddd;
             padding: 15px;
         }
         .menu-item:last-child {
@@ -29,18 +30,24 @@
         }
         .category {
             font-style: italic;
-            color: #310606;
+            color: #888;
         }
         .price {
             font-weight: bold;
             color: #444;
         }
+        h2.section-title {
+            margin-top: 40px;
+            font-size: 24px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Traditional Pahadi Food Menu</h1>
+    <h1>Food Menu</h1>
     <div class="menu">
+        <!-- Traditional Items -->
         <div class="menu-item">
             <h2>Stuffed Parantha</h2>
             <p class="category">Breakfast Specialty</p>
@@ -52,7 +59,7 @@
             <h2>Kafuli</h2>
             <p class="category">Signature Curry</p>
             <p>A wholesome curry made from spinach and fenugreek leaves, thickened with rice flour and seasoned with garlic and cumin.</p>
-            <p><strong>Served With:</strong> Steamed rice or mandua (finger millet) roti</p>
+            <p><strong>Served With:</strong> Steamed rice or mandua roti</p>
             <p class="price">₹200</p>
         </div>
         <div class="menu-item">
@@ -82,6 +89,35 @@
             <p>A festive sweet made with rice flour and jaggery, deep-fried to golden crispness. A must-have during celebrations.</p>
             <p><strong>Allergen Info:</strong> Contains jaggery, cooked in clarified butter (ghee)</p>
             <p class="price">₹100</p>
+        </div>
+
+        <!-- Modern Food Section -->
+        <h2 class="section-title">Modern Favorites</h2>
+
+        <div class="menu-item">
+            <h2>Veggie Loaded Pizza</h2>
+            <p class="category">Italian Classic</p>
+            <p>A crispy thin crust pizza topped with bell peppers, olives, onions, and mozzarella cheese.</p>
+            <p class="price">₹280</p>
+        </div>
+        <div class="menu-item">
+            <h2>Spaghetti Aglio e Olio</h2>
+            <p class="category">Pasta</p>
+            <p>Simple yet flavorful pasta sautéed in olive oil with garlic, chili flakes, and fresh parsley.</p>
+            <p class="price">₹250</p>
+        </div>
+        <div class="menu-item">
+            <h2>Classic Veg Burger</h2>
+            <p class="category">Fast Food</p>
+            <p>Crunchy patty with lettuce, tomato, cheese, and special sauce served in a toasted bun.</p>
+            <p><strong>Add-on:</strong> French fries + ₹40</p>
+            <p class="price">₹160</p>
+        </div>
+        <div class="menu-item">
+            <h2>Mango Smoothie</h2>
+            <p class="category">Beverage</p>
+            <p>Chilled mango smoothie blended with yogurt and honey—refreshing and healthy!</p>
+            <p class="price">₹120</p>
         </div>
     </div>
 
