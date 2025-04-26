@@ -60,6 +60,14 @@
       .swiper-slide:hover {
         transform: translateY(-5px);
       }
+      .room-title {
+        font-weight: 600;
+        font-size: 20px;
+        color: #222;
+        margin: 12px 0 5px;
+      }
+  
+  
       
   
   
