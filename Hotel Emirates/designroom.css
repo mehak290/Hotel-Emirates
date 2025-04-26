@@ -27,6 +27,17 @@
         margin: 0 auto;
         line-height: 1.6;
       }
+      @keyframes slideIn {
+        from {
+          width: 0;
+          opacity: 0;
+        }
+        to {
+          width: 80px;
+          opacity: 1;
+        }
+      }
+      
       
       
   
