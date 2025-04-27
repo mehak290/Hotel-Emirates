@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Our Rooms</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styleroom.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Rooms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styleroom.css" />
 </head>
 <body>
+
   <div class="heading-container">
     <h2>Explore Our Rooms</h2>
     <div class="underline"></div>
@@ -33,6 +33,7 @@
         <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
         <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
+
       <div class="swiper-slide">
         <img src="https://thecentrum.in/wp-content/uploads/2024/03/Premium-Room-Main-Img.webp" alt="Room 2" />
         <div class="room-title">Premium Suite</div>
@@ -45,13 +46,89 @@
         <div class="success-msg">✅ Booking Confirmed!</div>
       </div>
 
+      <div class="swiper-slide">
+        <img src="https://manorhousecountryhotel.s3-assets.com/executive-family-room-main.png" alt="Room 3" />
+        <div class="room-title">Family Room</div>
+        <div class="stars">★★★★★</div>
+        <div class="desc">Ideal for families, with extra beds and space.</div>
+        <div class="price">Rs.8000 Per Night</div>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
+      </div>
 
+      <div class="swiper-slide">
+        <img src="https://i.insider.com/5eeb92f23f737015fe4b778a?width=700" alt="Room 4" />
+        <div class="room-title">Business Room</div>
+        <div class="stars">★★★★★</div>
+        <div class="desc">Comfortable for business trips with work desk.</div>
+        <div class="price">Rs.5000 Per Night</div>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
+      </div>
 
+      <div class="swiper-slide">
+        <img src="https://www.apexhotels.co.uk/media/pqdfy0bc/acb-rm-superior-double-bedroom-dsc03564.jpg?rmode=crop&width=768&height=511" alt="Room 5" />
+        <div class="room-title">Superior Room</div>
+        <div class="stars">★★★★★</div>
+        <div class="desc">Bright and airy with modern interiors and views.</div>
+        <div class="price">Rs.11,00 Per Night</div>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://www.sripanwa.com/images/villas/two-bedroom-pool-villa-ocean-sunset-view-phuket-sri-panwa-luxury-resort.jpg" alt="Room 6" />
+        <div class="room-title">Ocean View</div>
+        <div class="stars">★★★★★</div>
+        <div class="desc">Wake up to stunning views of the ocean and beach.</div>
+        <div class="price">Rs.12,000 Per Night</div>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://www.thesavoycollection.com/wp-content/uploads/2021/07/george-single-room.jpg" alt="Room 7" />
+        <div class="room-title">Cozy Double</div>
+        <div class="stars">★★★★☆</div>
+        <div class="desc">Cozy and perfect for couples or solo travelers.</div>
+        <div class="price">Rs.7000 Per Night</div>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/582960977.jpg?k=06a25f90b6489cad43a6c7dce781a9427c7ac621fae23ff0f490001ac3ee24c3&o=&hp=1" alt="Room 8" />
+        <div class="room-title">Rustic Retreat</div>
+        <div class="stars">★★★★☆</div>
+        <div class="desc">A charming retreat with rustic decor and vibe.</div>
+        <div class="price">Rs.8000 Per Night</div>
+        <input type="date" class="date-input" />
+        <input type="date" class="date-input" />
+        <button class="book-now" onclick="bookRoom(this)">BOOK NOW</button>
+        <div class="success-msg">✅ Booking Confirmed!</div>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-next" style="color: green;"></div>
+    <div class="swiper-button-prev" style="color: green;"></div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Hotel Emirates. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="roomscript.js"></script>
+  
     
-    
-
-
-
-
 </body>
 </html>
