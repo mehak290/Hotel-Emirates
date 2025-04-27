@@ -507,3 +507,7 @@ body {
     background-color: #e6c200;
     transform: translateY(-5px);
   }
+  .for_rooms{
+    color: rgb(255, 230, 0);
+    font-size: 38px;
+  }
