@@ -6,7 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// button
-document.querySelector('btn').addEventListener('click', function() {
-  window.location.href = "about.html";
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sendButton = document.getElementById("send-button");
+
+  sendButton.addEventListener("click", function(event) {
+    event.preventDefault(); // stop the form from actually submitting yet
+    alert("Thank you! Your message has been sent.");
+  });
 });
+
