@@ -26,7 +26,7 @@ position: relative;
 .heading-container .underline {
 width: 80px;
 height: 4px;
-background-color: #219653;
+background-color: #0b1b33;
 margin: 10px auto 20px;
 border-radius: 3px;
 animation: slideIn 1s ease-in-out;
@@ -105,14 +105,14 @@ to {
   }
 
   .price {
-    color: #219653;
+    color: #0b1b33;
     font-weight: 600;
     font-size: 16px;
     margin-top: 5px;
   }
 
   .book-now {
-    background: #219653;
+    background: #0b1b33;
     color: white;
     border: none;
     padding: 10px 22px;
@@ -124,7 +124,7 @@ to {
   }
 
   .book-now:hover {
-    background: #1e874a;
+    background: #0b1b33;
   }
 
   .date-input {
@@ -139,7 +139,7 @@ to {
   }
 
   .success-msg {
-    color: #2e7d32;
+    color: #0b1b33;
     margin-top: 12px;
     font-size: 14px;
     font-weight: 500;
@@ -147,7 +147,7 @@ to {
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: #219653;
+    color: #0b1b33;
   }
 
   @media (max-width: 768px) {
