@@ -41,9 +41,25 @@ Emirates harnesses modern web development tools to offer simplicity and function
 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- 
 ---
 
+## Project Structure
+
+- **css-files/**: Contains all the stylesheets used for designing the website.  
+- **html-files/**: Holds the HTML documents that define the structure of the platform's web pages.  
+- **js-files/**: Includes the JavaScript files that power the functionality and interactivity of the platform.  
+- **images/**: Stores all the images used across the platform, from icons to banners.  
+- **README.md**: This file, serving as a guide and introduction to the project.
+
+---
+
+## How to Use
+
+1. Clone this repository:  
+   ```bash
+   git clone [repository-link]
 ## **Installation & Setup**  
 
 ### **Prerequisites** 🛠️  
