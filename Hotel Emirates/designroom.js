@@ -8,9 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     watchOverflow: true,
     navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-  
+      
        
             
                
