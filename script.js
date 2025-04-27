@@ -1,3 +1,19 @@
+function validateEmail(event) {
+    event.preventDefault(); // Prevent form submission for validation
+    const email = document.getElementById('email').value;
+    const emailError = document.getElementById('emailError');
+
+    // Email regex pattern for validation
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (emailPattern.test(email)) {
+        emailError.style.display = 'none'; // Hide error message if valid
+        alert('Form submitted successfully!');
+        document.getElementById('signup-form').submit(); // Submit the form if email is valid
+    } else {
+        emailError.style.display = 'block'; // Show error message if invalid
+    }
+}
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
   
@@ -15,7 +31,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       alert('Login successful!');
     }
   });
-  function validateEmail(email) {
+  function validateEmail(email).addEventListener('Valide Email') {
     // Regular expression for validating email format
     const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
@@ -278,3 +294,42 @@ stars.forEach(star => {
         ratingValue.textContent = `Rating: ${value}`;
     });
 });
+// function generateOTP() {
+//     // Generate a 6-digit random OTP
+//     const otp = Math.floor(100000 + Math.random() * 900000);
+//     // Display the OTP in the div
+//     document.getElementById('otp').textContent = Your OTP is: ${otp};
+// }
+//  function generateOTP() {
+//             // Generate a 6-digit random OTP
+//             const otp = Math.floor(100000 + Math.random() * 900000);
+//             // Display the OTP in the div
+//             document.getElementById('otp').textContent = Your OTP is: ${otp};
+//         }
+
+        function generateOTP(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+
+            // Get the entered email
+            const email = document.getElementById('email').value;
+
+            // Log the email to the console
+            console.log(Email entered: ${email});
+
+            // Generate a 6-digit random OTP
+            const otp = Math.floor(100000 + Math.random() * 900000);
+
+            // Display the OTP on the webpage
+            document.getElementById('otp').textContent = Your OTP is: ${otp};
+        }
+
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const galleryItems = document.querySelectorAll(".gallery-item");
+        
+            galleryItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    alert("You clicked on " + item.querySelector("img").alt);
+                });
+            });
+        });

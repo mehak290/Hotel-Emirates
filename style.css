@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +7,11 @@
 }
 html,
 body {
+  background-color: #e4cfcfa0;
   scroll-behavior: smooth;
 }
   
-  /* Topbar Header */
+  
 .topbar {
     background-color: #0b1b34;
     padding: 20px 0;
@@ -34,7 +35,7 @@ body {
 .logo-icon {
     font-size: 32px;
     font-weight: bold;
-    background-color: white;
+    background-color: rgb(201, 132, 132);
     color: #0b1b34;
     padding: 10px;
     border-radius: 5px;
@@ -68,7 +69,7 @@ body {
     border-bottom: 2px solid white;
 }
   
-  /* Head Section */
+  
 .head {
     background-image:url(finalbg.jpg);
     background-repeat: no-repeat;
@@ -318,9 +319,7 @@ body {
 .special-dish p:hover{
     color: #ffffff;
 }
-<<<<<<< HEAD
-  
-=======
+ HEAD
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -363,7 +362,7 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background:#ef9348;
   color: white;
   border: none;
   border-radius: 4px;
@@ -372,7 +371,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f87676;
 }
 
 .error {
@@ -403,15 +402,11 @@ HTML Code for Forgot Password Page
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-CSS Styling (Optional)
-Add styling for better user experience in style.css:
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
+  font-family: Arial, sans-serif;
+  text-align : center;
+  margin: 50px auto;
+  max-width: 800px;
 }
 
 .forgot-password-container {
@@ -432,7 +427,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #ef9348;
     color: white;
     border: none;
     cursor: pointer;
@@ -440,7 +435,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #f22f7a;
 }
 
 .message {
@@ -471,7 +466,7 @@ input {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #ef9348;
   color: white;
   border: none;
   cursor: pointer;
@@ -616,8 +611,7 @@ body {
 .star.active {
   color: gold;
 }
->>>>>>> mehak
-=======
+
 /* Whole section background */
 .main-container {
     display: flex;
@@ -778,5 +772,44 @@ button:hover {
     transform: translateY(-50%) scale(1);
     pointer-events: all;
 }
-  
->>>>>>> 0e2ae6fabdc0d77dc5d7db48343ecd30276d4bda
+
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}

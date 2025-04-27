@@ -40,5 +40,5 @@ var swiper = new Swiper(".mySwiper", {
     }
 
     msg.textContent = "✅Room Booked Successfully!";
-    msg.style.display = "block";
-  }
+    msg.style.display = "block";
+    }

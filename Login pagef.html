@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div class="login-container"><div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <div class="form-group remember-container">
+      <div class="remember-container">
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe">Remember Me</label>
+      </div></div>
+      <button type="submit">Login</button>
+      <p id="errorMessage" class="error"></p>
+    </form>
+ 
+  <p><a href="D:\scm\ForgotFINAL.html" id="forgotPassword">Forgot Password?</a></p>
+ 
+      <button onclick="location.href='Create Account.html'">Create A New Account</button>
+    
+    <br>
+  <a href="D:\scm\Termsf.html"><h4>Terms & Conditions</h4></a>
+
+<br><br>
+<div> <a href="D:\scm\homepage.html">Proceed to Home page</a></div>
+    <div class="rating-container">
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <div id="ratingValue"></div>
+    </div>
+   
+
+    <script>
+        // Get all the stars and the rating display element
+        const stars = document.querySelectorAll('.star');
+        const ratingValue = document.getElementById('ratingValue');
+        let selectedRating = 0; // Variable to store the selected rating
+
+        // Add event listeners to each star
+        stars.forEach(star => {
+            // Hover effect to highlight stars
+            star.addEventListener('mouseover', () => {
+                clearStars(); // Remove any existing highlights
+                highlightStars(star.dataset.value);
+            });
+
+            // Reset highlights on mouse leave
+            star.addEventListener('mouseout', () => {
+                clearStars();
+                if (selectedRating > 0) highlightStars(selectedRating); // Keep selected stars highlighted
+            });
+
+            // Set rating on click
+            star.addEventListener('click', () => {
+                selectedRating = star.dataset.value; // Store the selected rating
+                ratingValue.textContent = `${selectedRating} Star${selectedRating > 1 ? 's' : ''}`; // Update text
+                highlightStars(selectedRating);
+            });
+        });
+
+        // Function to highlight stars up to the specified value
+        function highlightStars(rating) {
+            stars.forEach(star => {
+                if (star.dataset.value <= rating) {
+                    star.classList.add('selected'); // Highlight selected stars
+                }
+            });
+        }
+
+        // Function to clear all star highlights
+        function clearStars() {
+            stars.forEach(star => {
+                star.classList.remove('selected');
+            });
+        }
+    </script>
+
+ <script src="D:\scm\final_scm\script.js"></script><footer>
+  <p>&copy; 2025 Hotel Emirates. All rights reserved.</p>
+</footer></div> 
+</body>
+</html> 

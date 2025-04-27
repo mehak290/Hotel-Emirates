@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="menu2.css">
+    <link rel="stylesheet" href="style2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Hotel Emirates</title>
-    <script src="script.js"></script>
+    <script src="homescript.js"></script>
+    <script src="menu2.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
@@ -24,13 +29,218 @@
         <nav>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#dining">Dining</a></li>
-            <li><a href="#">Login/Join</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#features">Feature</a></li>
+            <li><a href="#dinings">Dining</a></li>
+            <li><a href="D:\scm\Login pagef.html">Login/Join</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
       </div>
     </header>
+  <!-- HOME -->
+  <section class="head" id="home">
+    <br>
+    <h1 class="head-title"><img src="logo.jpeg" length="70px" width="70px">EMIRATES</h1><hr>
+    </section>
+
+    <!-- BOOKING SECTION -->
+
+  <section class="booking-form">
+    <form>
+      <div class="form-group">
+        <label for="arrival">Arrival Date</label>
+        <input type="date" id="arrival" min="2025-04-26" placeholder="DD-MM-YYYY" required>
+      </div>
+      <div class="form-group">
+        <label for="departure">Departure Date</label>
+        <input type="date" id="departure" min="2025-04-26" placeholder="DD-MM-YYYY" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Guests</label>
+        <input type="text" id="guests" placeholder="No. Of Guests" required>
+      </div>
+      <!-- BUTTON -->
+      <button class="send-btn">Check Availability</button>
+    </form>
+  </section>
+      <!-- TEXTAREA -->
+      <div class="new-container">
+        <section class="new-container-section">
+          <h1>Your Best Holidays Start Here! Be Our Guest.</h1>
+          <p>
+            Welcome to a hidden realm of extraordinary accommodations with luxury, comfort, and adventure converge.
+            Our hotels offer an unparalleled escape from the ordinary, inviting you to explore a subterranean world of wonders.<br>
+            Here you'll find everything you need to know as a tourist.<br> <br> <hr>
+          </p>
+        </section></div>
+  <!--ABOUT US  -->
+  <section class="intro" id="aboutus">
+    <div class="section_container intro_container">
+      <div class="intro__cotent"><br><br>
+        <p class="section__subheader">HIGHLIGHTS</p>
+        <!-- <h2 class="section__header">abce</h2> -->
+        <p class="section__description">
+          Welcome to Hotel Emirates, where timeless grandeur meets the whispering winds of Shimla. Inspired by the grace of heritage palaces, 
+          our hotel is a haven of regal elegance nestled amidst the misty mountains. With majestic interiors, old-world charm, and heartfelt 
+          hospitality, every corner echoes stories of a glorious past. Indulge in royal comfort, feast like kings, and wake to the symphony of 
+          pine trees and distant hills. At Emirates, we don't just offer a stay—we offer a legacy wrapped in luxury.Here, luxury isn't loud—it's 
+          in the quiet moments, the slow mornings, the scent of cedar in the air.
+        </p>
+        <a href="FinalAbout.html" class="about-link">About Us</a>
+      </div>
+      <div class="intro__video">
+        <video src="video.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+  </section><br><br>
+
+  <!-- ROOMS -->
+    <a href="roompage.html" class="room-container" 
+    id="rooms">
+      <div class="room-image-section">
+        <img src="hotelRoom.jpg " alt="Luxurious Room">
+        <!-- <button class="book-now">Book Now</button> -->
+      </div>
+      <div class="room-text-section">
+        <h2 class="for_rooms">Experience Royal Comfort</h2><br>
+        <p>Step into elegance and unwind in our premium rooms designed for your perfect stay. Serenity, style, and comfort await.</p><br>
+        <p>
+          Nestled in the serene hills of Shimla, Hotel Emirates invites you to indulge in an unforgettable escape 
+          where tradition meets luxury. Our rooms aren't just rooms—they're sanctuaries of comfort, crafted with 
+          elegance to make you feel like royalty.
+        </p>
+      </div></a>
+    
+
+    <br><br>
+    <a href="roompage.html" class="room-link">Book Now</a>
+    <a href="gallery.html" class="room-link">Explore Our Gallery</a><br><br><hr>
+      <!--FEATURES  -->
+      <section class="features-section" id="features">
+        <h2 class="section-title">Facilities</h2>
+        <h3 class="core-title">Core Features</h3>
+      
+        <div class="features-grid">
+          
+          <div class="feature-item">
+            <i class="fa-solid fa-thumbs-up feature-icon"></i>
+            <h4>Have High Rating</h4>
+            <p>We are among the top-rated hotels, consistently receiving accolades from our guests. Awarded as "The Rising Resort" by the State Chief Minister.</p>
+          </div>
+      
+          <div class="feature-item">
+            <i class="fa-solid fa-clock feature-icon"></i>
+            <h4>What We Provide</h4>
+            <p>Free WiFi, parking, swimming pool, laundry service, medical support, babysitting services, 24/7 hospitality, and exquisite dining options.</p>
+          </div>
+      
+          <div class="feature-item">
+            <i class="fa-solid fa-location-dot feature-icon"></i>
+            <h4>Best Location</h4>
+            <p>Located in the most prime areas, offering luxury stays at 25+ sought-after destinations across the region.</p>
+          </div>
+      
+          <div class="feature-item">
+            <i class="fa-solid fa-xmark feature-icon"></i>
+            <h4>Free Cancellation</h4>
+            <p>Plans changed? No worries. We offer free cancellation for maximum flexibility and peace of mind.</p>
+          </div>
+      
+          <div class="feature-item">
+            <i class="fa-solid fa-credit-card feature-icon"></i>
+            <h4>Payment Options</h4>
+            <p>Multiple payment choices to suit your needs. We prefer 20% advance payment to confirm your booking securely.</p>
+          </div>
+      
+          <div class="feature-item">
+            <i class="fa-solid fa-tags feature-icon"></i>
+            <h4>Special Offers</h4>
+            <p>From romantic getaways to business trips, enjoy specially curated discounts. Use code <strong>#EMI25</strong> as a Summer offer!</p>
+          </div>
+      
+        </div>
+      </section>
+    <!-- FOOD -->
+    
+    <br><br> 
+    <div class="menu_menu" id="dinings">
+      <h2 class="menu-title">Our Exquisite Dining</h2>
+      <p class="menu-description">
+        At Emirates Hotel, we believe food is not just a meal, it’s an experience. 🍷✨<br>
+        Step into a world where every bite tells a story. 🌟 <br>
+    From gourmet international cuisines to timeless Indian classics, our curated menu is crafted to delight every palate.<br> 
+    Indulge in farm-fresh breakfasts, royal Mughlai dinners, and artisan desserts that leave you longing for more.
+    <br><br>
+        From sizzling continental delights to traditional Indian feasts, our master chefs create magic on every plate.<br> 
+        Fresh ingredients, global flavors, and a sprinkle of love await you in every bite.
+      </p>
+      <a href="menu2.html" class="menu-link">Explore Our Full Menu ➔</a>
+    </div>
+  <br><br><hr><br>
+  <!-- Contact Us -->
+  <section class="contact-header" id="contact">
+    <h1>Get in Touch with Hotel Emirates</h1>
+    <p>Your Perfect Stay Starts With a Simple Hello.</p>
+  </section>
+
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> Palm Street, Downtown Dubai, UAE</p>
+      <p><strong>Phone:</strong> +971 123 456 XXX</p>
+      <p><strong>Email:</strong> contact@hotelemirates.com</p>
+      <p><strong>Working Hours:</strong> Open 24/7</p>
+    
+    <h3>Follow us on</h3>
+    <div class="social-links">
+      <a href="#" class="facebook">
+        <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+      </a>
+      <a href="#" class="instagram">
+        <i class="fab fa-instagram"></i> <span>Instagram</span>
+      </a>
+      <a href="#" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+      <a href="#" class="twitter">
+        <i class="fab fa-x-twitter"></i> <span>Twitter</span>
+      </a>
+    </div>
+    
+
+    <a href="roompage.html" class="booking-btn">Book Your Stay</a>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{7,15}" title="Please enter a valid phone number (digits only)" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" id="send-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Find Us Here</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.961043912792!2d55.27078261501132!3d25.20484988389948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4349eaeeeaa1%3A0xd1e4a55d159c048f!2sDowntown%20Dubai!5e0!3m2!1sen!2sae!4v1600000000000"
+      width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+  <marquee direction="left"><p><strong>Phone:</strong> +971 123 456 XXX</p></marquee>
+
+  <marquee direction="left"><p><strong>Email:</strong> contact@hotelemirates.com</p></marquee>
+  <marquee direction="left">  <p><strong>Email:</strong> contact@hotelemirates.com</p></marquee>
+  <!-- footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Hotel Emirates. All rights reserved.</p>
+  </footer>
+  </body>
+</html>
 
