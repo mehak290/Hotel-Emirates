@@ -85,10 +85,10 @@ The *Emirates- A stay Beyond Expectations * project thrives on the efforts of it
 
 | Name                | GitHub Profile                     | LinkedIn Profile      |
 |---------------------|-------------------------------------|-----------------------|
-| Mehak Sampla        | [@sonam-negi-00](https://github.com/mehak290) | [Mehak Sampla]([https://linkedin.com/in/sonam-negi](https://www.linkedin.com/in/mehak-sampla-57bbb5331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)) |
-| Meghna Rana         | [@krishnanautiyal](https://github.com/megghnaa09) | [Meghna Rana]([https://linkedin.com/in/krishnanautiyal](https://www.linkedin.com/in/meghna-rana-98262030a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)) |
-| Sneha Dahiya        | [@ShamreetSingh](https://github.com/snehadahiya111) | [Sneha Dahiya]([https://linkedin.com/in/shamreetsingh](https://www.linkedin.com/in/sneha-dahiya-76a164353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)) |
-| Geetika             | [@codershivam96](https://github.com/geetikaChaudhary09) | [Geetika]([https://linkedin.com/in/shivamsinghania](https://www.linkedin.com/in/geetika-chaudhary-8a2423324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Mehak Sampla        | [@mehak290](https://github.com/mehak290) | [Mehak Sampla]([https://linkedin.com/in/sonam-negi](https://www.linkedin.com/in/mehak-sampla-57bbb5331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)) |
+| Meghna Rana         | [@megghnaa09](https://github.com/megghnaa09) | [Meghna Rana]([https://linkedin.com/in/krishnanautiyal](https://www.linkedin.com/in/meghna-rana-98262030a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)) |
+| Sneha Dahiya        | [@snehadahiya111](https://github.com/snehadahiya111) | [Sneha Dahiya]([https://linkedin.com/in/shamreetsingh](https://www.linkedin.com/in/sneha-dahiya-76a164353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)) |
+| Geetika             | [@geetikaChaudhary09](https://github.com/geetikaChaudhary09) | [Geetika]([https://linkedin.com/in/shivamsinghania](https://www.linkedin.com/in/geetika-chaudhary-8a2423324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
 | Yashvi Sharma      | [@saksham](https://github.com/YashviSharmaa) | [Yashvi Sharma]([https://linkedin.com/in/saksham](https://www.linkedin.com/in/yashvi-sharma-396123325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)) |
 
 ---
