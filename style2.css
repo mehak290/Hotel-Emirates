@@ -6,14 +6,14 @@
   
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #e4cfcfa0;
+    background-color: #f9f4f4a0;
     color: #333;
-    line-height: 2;
+    line-height: 1.6;
   }
   
   .contact-header {
     background: url("https://i.pinimg.com/736x/72/8b/a0/728ba0ae87c03d54732676087635e384.jpg") center/cover no-repeat;
-    padding: 80px 20px ;
+    padding: 80px 20px;
     text-align: center;
     color: black;
   }
@@ -32,81 +32,36 @@
     gap: 40px;
   }
   
-  
   .contact-info {
     flex: 1;
     min-width: 300px;
   }
-
+  
   .contact-info h2, .contact-form h2 {
     margin-bottom: 15px;
     color: darkgreen;
   }
   
-  /* Regular link styling */
-.social-links a {
-  display: inline-block;
-  margin: 6px 12px 6px 0;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-}
-
-/* Icon styles */
-.social-links i {
-  margin-right: 6px;
-  font-size: 18px;
-}
-
-/* Text span transition */
-.social-links span {
-  transition: color 0.3s ease, transform 0.3s ease;
-  display: inline-block; /* needed for transform to work */
-}
-
-/* On hover, only change the span (text) */
-.social-links a:hover span {
-  color: red;
-  transform: scale(1.1);
-}
-
-  /* Platform-specific colors */
-  .facebook i {
-    color: #1877F2;
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
   }
   
-  .instagram i {
-    color: #E1306C;
+  .social-links a:hover {
+    color: #caa75b;
   }
-  
-  .whatsapp i {
-    color: #25D366;
-  }
-  
-  .twitter i {
-    color: #000000; /* Twitter/X uses black */
-  }
-  
-  /* Hover effect (optional) */
-  .social-links a:hover i {
-    transform: scale(1.2);
-    transition: transform 0.2s;
-  }
-  
   
   .booking-btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: rgb(215, 144, 12);
+    background: #caa75b;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-  }
-
-  .booking-btn:hover {
-  background-color: #a38540;
   }
   
   .contact-form {
@@ -129,7 +84,7 @@
   }
   
   .contact-form button {
-    background-color: rgb(215, 144, 12);
+    background-color: #caa75b;
     color: white;
     border: none;
     padding: 12px;
@@ -144,7 +99,7 @@
   }
   
   .map-section {
-    padding: 30px 20px;
+    padding: 40px 20px;
     background-color: #efe9e994;
     text-align: center;
   }
