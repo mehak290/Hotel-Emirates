@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Dish Menu</title>
+  <!-- Adding Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e4cfcfa0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      color: #3e0c0c;
+      margin-top: 40px;
+    }
+    .menu-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .menu-item {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .menu-item h2 {
+      color: #8b2c2c;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-family: 'Lobster', cursive;
+    }
+    .menu-item p {
+      font-size: 1em;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .price {
+      font-weight: bold;
+      color: #d62828;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sweet Dish Menu</h1>
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <h2>Gulab Jamun</h2>
+      <p>Soft and juicy milk-solid dumplings soaked in rose-scented syrup.</p>
+      <p class="price">₹350</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Rasgulla</h2>
+      <p>Spongy white balls soaked in light sugar syrup – a Bengali classic!</p>
+      <p class="price">₹300</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Kheer</h2>
+      <p>Traditional Indian rice pudding with cardamom and nuts.</p>
+      <p class="price">₹250</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Jalebi</h2>
+      <p>Crispy golden swirls dipped in saffron sugar syrup.</p>
+      <p class="price">₹200</p>
+    </div>
+
+    <!-- International Desserts -->
+    <div class="menu-item">
+      <h2>Tiramisu</h2>
+      <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+      <p class="price">₹500</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Cheesecake</h2>
+      <p>Rich, creamy cheesecake with a buttery graham cracker crust and fruit topping.</p>
+      <p class="price">₹450</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Baklava</h2>
+      <p>Sweet, flaky pastry filled with nuts and soaked in honey syrup – a Turkish delight!</p>
+      <p class="price">₹400</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Churros</h2>
+      <p>Crispy, cinnamon-dusted dough sticks served with chocolate dipping sauce.</p>
+      <p class="price">₹350</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Macarons</h2>
+      <p>Delicate almond meringue cookies filled with smooth buttercream, perfect for tea time.</p>
+      <p class="price">₹500</p>
+    </div>
+
+    <div class="menu-item">
+      <h2>Creme Brulee</h2>
+      <p>A smooth custard dessert topped with a caramelized sugar crust.</p>
+      <p class="price">₹550</p>
+    </div>
+  </div>
+  <script>
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const dishName = item.getAttribute('data-name');
+        alert(`You selected: ${dishName}`);
+      });
+    });
+    </script>
+
+</body>
+</html>
