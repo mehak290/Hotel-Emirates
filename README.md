@@ -38,12 +38,10 @@ With Emirates, redefine the way you book and elevate your travel to new heights 
 ## **Key Technologies Used** 💻  
 
 Emirates harnesses modern web development tools to offer simplicity and functionality:  
-- **HTML5**: For structure and semantic markup.  
-- **CSS3**: To craft stunning animations, styles, and responsive layouts.  
-- **JavaScript**: For interactivity, including dynamic forms, user input validation, and DOM manipulation.  
 
-Optional tools such as **React** or **jQuery** can further enhance interactivity.
-
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
 ---
 
 ## **Installation & Setup**  
