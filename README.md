@@ -55,11 +55,22 @@ Emirates harnesses modern web development tools to offer simplicity and function
 
 ---
 
-## How to Use
+## Run Locally
 
-1. Clone this repository:  
-   ```bash
-   git clone [repository-link]
+1. Clone the repository:  
+   [```bash
+   git clone [repository-link]](https://github.com/mehak290/Hotel-Emirates/)
+   cd Hotel-Emirates
+   
+2. Launch the Project:
+   Open the `html-files/index.html` file in your browser to view the platform.
+
+---
+
+## Note
+
+⚠️ **Note**: This project focuses on the **frontend** only. Backend features such as authentication, Booking ,Online payments , and others will be added in the future.
+
 ## **Installation & Setup**  
 
 ### **Prerequisites** 🛠️  
