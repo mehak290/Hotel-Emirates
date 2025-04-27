@@ -21,20 +21,18 @@ By blending efficiency, luxury, and convenience, Emirates ensures an exceptional
 
 ---
 
-## **Enhanced Features**  
+### **Enhanced Features for Guests**
 
-### **For Guests**  
-- 🛏️ **Interactive Room Booking**: Book rooms tailored to your preferences, dates, and guest needs with ease.  
-- 🔍 **Live Room Previews**: Explore detailed images, 360° virtual tours, and room-specific features.  
-- 🥗 **Customized Food Orders**: Choose meals from a menu tailored to dietary preferences (vegetarian, vegan, gluten-free, etc.).  
-- 📱 **Multi-Device Accessibility**: Manage bookings seamlessly across desktop, tablet, or mobile devices.  
+Discover how **Emirates** transforms your booking journey into a seamless and luxurious experience with these top-tier features:
 
-<img>  
+- 🛏️ **Interactive Room Booking**: Effortlessly reserve rooms tailored to your preferences, specific dates, and guest requirements.  
+- 🔍 **Immersive Live Room Previews**: Take a closer look with high-quality images, 360° virtual tours, and detailed room-specific highlights.  
+- 🥗 **Personalized Culinary Choices**: Indulge in meals crafted for you, featuring menus designed to meet dietary preferences—vegetarian, vegan, gluten-free, and more.  
+- 📱 **Cross-Device Compatibility**: Enjoy the freedom to manage bookings flawlessly across desktops, tablets, and mobile devices for ultimate convenience.  
+- 📊 **Comprehensive Service Analytics**: Unlock powerful dashboards packed with insights to refine guest experiences and optimize services.   
 
-### **For Hotel Admins**  
-- 📊 **Service Analytics**: Access insightful dashboards to refine customer experiences.  
-- 🌱 **Sustainability Options**: Showcase eco-friendly practices to appeal to environmentally-conscious travelers.  
-
+With Emirates, redefine the way you book and elevate your travel to new heights of comfort and style! ✨  
+  
 ---
 
 ## **Key Technologies Used** 💻  
