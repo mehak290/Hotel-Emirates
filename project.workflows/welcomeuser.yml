@@ -1,0 +1,44 @@
+project:
+  name: Hotel Emirates
+  type: Web Application
+  description: >
+    Hotel Emirates is an intutive and engagimg online hotel booking platform that allows users to browse menus, book different rooms according to needs, shows hotel address with a modern experience.
+branding:
+  palette:
+    - name: white
+    - hex: "#ffffff"
+    - usage: backgrounds, font colour, native space
+
+    - name: yellow
+    - hex: "#ffd700"
+    - usage: buttons and headings
+
+    - name: royal blue
+    - hex: "#0b1b34"
+    - usage: container background, hover.
+
+structure:
+  frontend:
+    - homepage.html
+    - menu2.html
+    - responsive.html
+    - login.html
+    - roompage.html
+    - contact.html
+    - assets/
+      - images/
+      - videos/
+    - scripts/
+      - homepage.js
+      - menu2.js
+      - roomscript.js
+    backend: []
+
+features:
+  core:
+  - can view location in map
+  - facilities
+  - food menu
+  - user feedback
+  - room booking
+
