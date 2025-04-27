@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f4f4a0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .contact-header {
+    background: url("https://i.pinimg.com/736x/72/8b/a0/728ba0ae87c03d54732676087635e384.jpg") center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  .contact-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-info h2, .contact-form h2 {
+    margin-bottom: 15px;
+    color: darkgreen;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .social-links a:hover {
+    color: #caa75b;
+  }
+  
+  .booking-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #caa75b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background-color: #caa75b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #a38540;
+  }
+  
+  .map-section {
+    padding: 40px 20px;
+    background-color: #efe9e994;
+    text-align: center;
+  }
+  
+  .map-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    background-color:#003049;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+ 
