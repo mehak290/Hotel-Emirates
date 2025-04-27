@@ -4,4 +4,8 @@ var swiper = new Swiper(".mySwiper", {
     loop: false,
     centeredSlides: false,
     slidesOffsetAfter: 0,
+    slidesOffsetAfter: 0,
+    watchOverflow: true,
+    navigation: {
+
 
