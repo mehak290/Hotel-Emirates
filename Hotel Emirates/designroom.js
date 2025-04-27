@@ -5,8 +5,7 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: false,
     slidesOffsetAfter: 0,
     slidesOffsetAfter: 0,
-    watchOverflow: true,
-    navigation: {
+    
         
       
        
