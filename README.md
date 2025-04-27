@@ -85,11 +85,11 @@ The *Emirates- A stay Beyond Expectations * project thrives on the efforts of it
 
 | Name                | GitHub Profile                     | LinkedIn Profile      |
 |---------------------|-------------------------------------|-----------------------|
-| Mehak Sampla        | [@mehak290](https://github.com/mehak290) | [Mehak Sampla](https://github.com/mehak-sampla) |
-| Meghna Rana         | [@megghnaa09](https://github.com/megghnaa09) | [Meghna Rana](https://github.com/meghna-rana) |
-| Sneha Dahiya        | [@snehadahiya111](https://github.com/snehadahiya111) | [Sneha Dahiya](https://github.com/sneha-dahiya) |
-| Geetika             | [@geetikaChaudhary09](https://github.com/geetikaChaudhary09) | [Geetika](https://github.com/geetika)|
-| Yashvi Sharma      | [@Yashvi Sharma](https://github.com/YashviSharmaa) | [Yashvi Sharma](https://github.com/yashvi-sharma)|
+| Mehak Sampla        | [@mehak290](https://github.com/mehak290) | [Mehak Sampla](www.linkedin.com/in/mehak-sampla) |
+| Meghna Rana         | [@megghnaa09](https://github.com/megghnaa09) | [Meghna Rana](hwww.linkedin.com/in/meghnarana09) |
+| Sneha Dahiya        | [@snehadahiya111](https://github.com/snehadahiya111) | [Sneha Dahiya](www.linkedin.com/in/snehadahiya09) |
+| Geetika             | [@geetikaChaudhary09](https://github.com/geetikaChaudhary09) | [Geetika](www.linkedin.com/in/geetika-chaudhary09)|
+| Yashvi Sharma      | [@YashviSharmaa](https://github.com/YashviSharmaa) | [Yashvi Sharma](www.linkedin.com/in/yashvisharmaa09)|
 
 ---
 
