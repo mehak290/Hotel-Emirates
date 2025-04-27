@@ -6,6 +6,8 @@ var swiper = new Swiper(".mySwiper", {
     slidesOffsetAfter: 0,
     slidesOffsetAfter: 0,
     watchOverflow: true,
-    navigation: {
+    navigation: { nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
 
 
