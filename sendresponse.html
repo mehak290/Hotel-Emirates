@@ -8,7 +8,6 @@
 </head>
 <body>
   <div class="form-container">
-    <!-- Contact Form -->
     <form id="contact-form">
       <h1>Contact Information</h1>
       <label for="email">Email:</label>
@@ -19,8 +18,6 @@
 
       <button type="submit">Submit</button>
     </form>
-
-    <!-- Guest Form -->
     <form id="guest-form">
       <h1>Guest Details</h1>
       <label for="guests">Number of Guests:</label>
@@ -29,7 +26,7 @@
       <button type="submit">Submit</button>
     </form>
 
-    <!-- Date Form -->
+    
     <form id="date-form">
       <h1>Reservation Dates</h1>
       <label for="checkin">Check-In Date:</label>
@@ -43,5 +40,19 @@
   </div>
 
   <script src="sendresponse.js"></script>
+  <script>
+    document.querySelector('.feedback-form').addEventListener('submit', function (e) {
+      const emailInput = document.getElementById('email');
+      const emailValue = emailInput.value.trim();
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+  
+      if (!emailPattern.test(emailValue)) {
+        e.preventDefault(); 
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+      }
+    });
+  </script>
+  
 </body>
 </html>

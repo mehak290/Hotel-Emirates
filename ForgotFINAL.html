@@ -5,50 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
     <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="form-container">
-    <h1>Forgot Password</h1>
-    <form id="otpForm" onsubmit="generateOTP(event)">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+        <h1>Forgot Password</h1>
+        <form id="otpForm" onsubmit="generateOTP(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Generate OTP</button>
+        </form>
         <br>
-        <button type="submit">Generate OTP</button>
-    </form>
-    <div id="otpDisplay">
-    <br>
-    <label for="otp">Enter OTP:</label>
-    <input type="text" id="otpInput" name="otp" placeholder="Enter the OTP" required>
-    <form id="verifyForm">
-    <button onclick="verifyOTP()">Verify OTP</button>
-</form>
-
-    <div id="verifyMessage"></div>
-</div>
-
-<div> <a href="D:\scm\homepage.html">Proceed to Home page</a></div>
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otpInput" name="otp" placeholder="Enter the OTP" required>
+        <button onclick="verifyOTP()">Verify OTP</button>
+        <div id="verifyMessage"></div>
+        <div> <a href="D:\scm\homepage.html">Proceed to Home page</a></div>
+        <footer>
+            <p>&copy; 2025 Hotel Emirates. All rights reserved.</p>
+          </footer></div> 
+    </div>
     <script>
         let generatedOTP = ""; // Variable to store the OTP
 
         function generateOTP(event) {
-            event.preventDefault(); // Prevent page refresh
-
+            event.preventDefault(); // Prevent form refresh
             const email = document.getElementById('email').value;
 
-            // Log the email and OTP to the console
+            // Log email and OTP to the console
             console.log(`Email entered: ${email}`);
             generatedOTP = Math.floor(100000 + Math.random() * 900000);
             console.log(`Generated OTP: ${generatedOTP}`);
+            alert(`Your OTP is: ${generatedOTP}`); // Optional alert for users
         }
 
         function verifyOTP() {
             const enteredOTP = document.getElementById('otpInput').value;
+            const verifyMessage = document.getElementById('verifyMessage');
 
             if (enteredOTP === generatedOTP.toString()) {
-                document.getElementById('verifyMessage').innerText = "OTP Verified ✅";
+                verifyMessage.innerText = "OTP Verified ✅";
+                verifyMessage.style.color = "green";
             } else {
-                document.getElementById('verifyMessage').innerText = "Invalid OTP ❌";
+                verifyMessage.innerText = "Invalid OTP ❌";
+                verifyMessage.style.color = "red";
             }
+
+            // Clear the message after 5 seconds
+            setTimeout(() => {
+                verifyMessage.innerText = ""; // Clear the message
+            }, 5000); // 5000 milliseconds = 5 seconds
         }
     </script>
 </body>

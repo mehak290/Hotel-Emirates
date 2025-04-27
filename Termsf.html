@@ -4,54 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms and Conditions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        p {
-            color: #555;
-            margin: 10px 0;
-        }
-        ul {
-            list-style: disc;
-            margin: 10px 0 10px 20px;
-        }
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            display: block;
-            margin: 20px auto;
-            width: 200px;
-            text-align: center;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
+        <div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
         <h1>Terms and Conditions</h1>
         <p>Before logging in to our hotel website, please read and accept the following terms and conditions:</p>
         
@@ -63,16 +29,19 @@
             <li>Your data will be processed in accordance with our privacy policy.</li>
         </ul>
         
+        <br><br>
         <p>By clicking "I Agree," you confirm that you have read and accepted these terms.</p>
-        
+        <br><br>
         <button onclick="acceptTerms()">I Agree</button>
-    </div>
-
+        <br><br>  <br><br>
+    <footer>
+        <p>&copy; 2025 Hotel Emirates. All rights reserved.</p>
+      </footer></div> 
     <script>
         function acceptTerms() {
             alert("Thank you for accepting the terms and conditions. You may now log in.");
             // Redirect to login page (Replace 'login.html' with your actual login page URL)
-            window.location.href = 'login pagef.html';
+            window.location.href = 'Login pagef.html';
         }
     </script>
 </body>
