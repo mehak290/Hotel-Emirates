@@ -14,7 +14,7 @@ Embrace luxury and simplicity with **Emirates**, the cutting-edge online hotel b
 
 Step into the world of **Emirates**—where every booking leads to an extraordinary stay! 🌟  
 
-https://github.com/user-attachments/assets/cecb095b-12fb-458c-a7f7-e341f3627c2e
+(https://github.com/user-attachments/assets/cecb095b-12fb-458c-a7f7-e341f3627c2e)
 
 
 By blending efficiency, luxury, and convenience, Emirates ensures an exceptional experience for guests and hotels alike.
@@ -42,7 +42,6 @@ Emirates harnesses modern web development tools to offer simplicity and function
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-- 
 ---
 
 ## Project Structure
@@ -58,7 +57,7 @@ Emirates harnesses modern web development tools to offer simplicity and function
 ## Run Locally
 
 1. Clone the repository:  
-   [```bash
+   ```bash
    git clone [repository-link]](https://github.com/mehak290/Hotel-Emirates/)
    cd Hotel-Emirates
    
@@ -67,14 +66,31 @@ Emirates harnesses modern web development tools to offer simplicity and function
 
 ---
 
-## Note
-
 ⚠️ **Note**: This project focuses on the **frontend** only. Backend features such as authentication, Booking ,Online payments , and others will be added in the future.
 
-## **Installation & Setup**  
+## Future Enhancements
 
-### **Prerequisites** 🛠️  
-To get started, you’ll need:  
-- 🖥️ A reliable **code editor** (e.g., Visual Studio Code).  
-- 🌐 A modern **web browser** (e.g., Chrome, Firefox, Edge) for testing.  
-- 🔧 Optional: **JavaScript libraries/frameworks** (e.g., React or jQuery) for additional functionality.
+To elevate the platform, we plan to introduce the following features:
+
+- ⚙ *Backend Integration: Using **Node.js* or *Firebase* to handle server-side operations.
+- 🛒 *Otp confirmation on their devices*: Enable users to otp confirmations on their own devices .
+- 💳 *Payment Gateway Integration*: Provide secure online payment options.
+- ⭐ *Ratings and Reviews*: Implement a system for feedback and user experiences.
+
+---
+
+## Meet the Contributors
+
+The *Emirates- A stay Beyond Expectations * project thrives on the efforts of its talented contributors. Connect with them below:
+
+| Name                | GitHub Profile                     | LinkedIn Profile      |
+|---------------------|-------------------------------------|-----------------------|
+| Mehak Sampla        | [@sonam-negi-00](https://github.com/mehak290) | [Mehak Sampla]([https://linkedin.com/in/sonam-negi](https://www.linkedin.com/in/mehak-sampla-57bbb5331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)) |
+| Meghna Rana         | [@krishnanautiyal](https://github.com/megghnaa09) | [Meghna Rana]([https://linkedin.com/in/krishnanautiyal](https://www.linkedin.com/in/meghna-rana-98262030a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)) |
+| Sneha Dahiya        | [@ShamreetSingh](https://github.com/snehadahiya111) | [Sneha Dahiya]([https://linkedin.com/in/shamreetsingh](https://www.linkedin.com/in/sneha-dahiya-76a164353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)) |
+| Geetika             | [@codershivam96](https://github.com/geetikaChaudhary09) | [Geetika]([https://linkedin.com/in/shivamsinghania](https://www.linkedin.com/in/geetika-chaudhary-8a2423324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Yashvi Sharma      | [@saksham](https://github.com/YashviSharmaa) | [Yashvi Sharma]([https://linkedin.com/in/saksham](https://www.linkedin.com/in/yashvi-sharma-396123325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)) |
+
+---
+
+
