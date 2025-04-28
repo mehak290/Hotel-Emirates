@@ -1,6 +1,6 @@
 
-[submodule "Hotel Emirates"]
-  path = Hotel Emirates
+[submodule "Hotel-Emirates"]
+  path = Hotel-Emirates
   url = https://github.com/mehak290/Hotel-Emirates.git
 [submodule "FinalEval_SCM"]
   path = FinalEval_SCM
