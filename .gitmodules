@@ -1,0 +1,22 @@
+
+[submodule "Hotel-Emirates"]
+  path = Hotel-Emirates
+  url = https://github.com/mehak290/Hotel-Emirates.git
+[submodule "FinalEval_SCM"]
+  path = FinalEval_SCM
+  url = https://github.com/mehak290/Hotel-Emirates.git
+[submodule "assign2/assign2"]
+  path = assign2/assign2
+    url = https://github.com/mehak290/Hotel-Emirates.git
+[submodule "gitreset"]
+  path = gitreset
+  url = https://github.com/mehak290/Hotel-Emirates.git
+[submodule "group10"]
+  path = group10
+  url = https://github.com/mehak290/Hotel-Emirates.git
+[submodule "resetfile"]
+  path = resetfile
+  url = https://github.com/mehak290/Hotel-Emirates.git
+[submodule "school-blog"]
+  path = school-blog
+  url = https://github.com/mehak290/Hotel-Emirates.git

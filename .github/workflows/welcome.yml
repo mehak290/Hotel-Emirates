@@ -1,15 +1,16 @@
-name: Welcome New Contributors
+name: Hotel-Emirates
 
 on:
-  pull_request_target:
-    types: [opened]
+  pull:
+     branches:
+	- main 
 
 jobs:
-  greet:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Greet the contributor
-        uses: actions/first-interaction@v1
+      - name: Hotel-Emirates
+        uses: actions/checkout@v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-message: |
