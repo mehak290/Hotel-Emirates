@@ -1,19 +1,26 @@
 name: Hotel-Emirates
 
 on:
-  pull:
-     branches:
-	- main 
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Hotel-Emirates
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-message: |
+      
+      - name: Send PR Welcome Message
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
             👋 Hello and welcome!
             Thank you for your *first contribution* to this project.
             We appreciate your effort and look forward to reviewing it soon! 🎉
